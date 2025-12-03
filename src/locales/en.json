@@ -1,0 +1,197 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "skills": "Skills",
+    "experience": "Experience",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Hello, I'm",
+    "name": "Quang Dao",
+    "subtitle": "Full Stack Developer & Tech Leader with over 3 years of experience developing web applications, AI systems, and management solutions.",
+    "viewProjects": "View Projects",
+    "contact": "Contact",
+    "downloadCV": "Download CV"
+  },
+  "about": {
+    "title": "About",
+    "intro": "Hello! I'm <strong>Trần Quang Đạo</strong>, a <strong>Full Stack Developer</strong> and <strong>Tech Leader</strong> with a passion for creating innovative and efficient technology solutions.",
+    "description1": "With over <strong>3 years of experience</strong> in developing web applications, AI systems, and enterprise management solutions, I have accumulated extensive knowledge of <strong>React</strong>, <strong>Node.js</strong>, <strong>Python</strong>, and modern cloud technologies.",
+    "description2": "I'm always seeking new challenges and opportunities to learn and grow. My goal is to create high-quality technology products that deliver real value to users.",
+    "education": {
+      "title": "Education",
+      "university": "Hanoi University of Science and Technology",
+      "degree": "Computer Science - Graduated with Excellence"
+    },
+    "achievements": {
+      "title": "Achievements",
+      "achievement1": "Top 10 NestQuant Tournament (07/2023)",
+      "achievement2": "Top 3 Fintech Innovation Competition (06/2024)"
+    },
+    "stats": {
+      "projects": "Notable Projects",
+      "experience": "Years of Experience",
+      "awards": "Awards"
+    }
+  },
+  "skills": {
+    "title": "Skills",
+    "categories": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "database": "Database",
+      "devops": "DevOps & Cloud",
+      "others": "Others"
+    }
+  },
+  "experience": {
+    "title": "Work Experience",
+    "present": "Present",
+    "location": {
+      "vietnam": "Vietnam",
+      "remote": "Remote"
+    },
+    "experiences": [
+      {
+        "title": "Fullstack Developer",
+        "company": "AIPTGROUP VIETNAM",
+        "location": "vietnam",
+        "period": "11/2024 - Present",
+        "description": [
+          "Developed web-based internal process management system to digitize and automate company processes",
+          "Improved operational efficiency by optimizing administrative processes",
+          "Responsible for full-stack development, working on both backend and frontend",
+          "Implemented CI/CD pipelines and containerization with Docker for fast and scalable deployment"
+        ]
+      },
+      {
+        "title": "Tech Leader",
+        "company": "EPOSO AI (Remote Freelancer)",
+        "location": "remote",
+        "period": "11/2024 - 01/2025",
+        "description": [
+          "Led team developing smart energy management system for Samsung",
+          "Built simulation tool to compare energy usage levels",
+          "Created user segments for Vietnam, India, and Thailand with localized electricity pricing models",
+          "Used NextJS, NestJS, PostgreSQL, Docker, and CI/CD"
+        ]
+      },
+      {
+        "title": "Tech Leader",
+        "company": "INVESTY CO LTD",
+        "location": "vietnam",
+        "period": "11/2023 - 11/2024",
+        "description": [
+          "Developed global job connection platform connecting Vietnamese students with international opportunities",
+          "Built freelance job marketplace for project-based recruitment",
+          "Integrated course registration module for Korean universities",
+          "Used ReactJS, Redux, NodeJS, MongoDB, WebSocket, Firebase"
+        ]
+      },
+      {
+        "title": "Fullstack Developer",
+        "company": "BKC Labs",
+        "location": "vietnam",
+        "period": "09/2022 - 10/2023",
+        "description": [
+          "Developed full-stack web applications using React and Node.js",
+          "Designed and implemented RESTful APIs",
+          "Worked with team to develop new features",
+          "Optimized performance and user experience"
+        ]
+      }
+    ]
+  },
+  "projects": {
+    "title": "Projects",
+    "viewCode": "View Code",
+    "liveDemo": "Live Demo",
+    "teamSize": "Team Size",
+    "projects": [
+      {
+        "title": "CRM Management System",
+        "description": "Comprehensive Customer Relationship Management (CRM) system with analytics dashboard, leads management, sales pipeline, and detailed reports. Supports real-time updates and email marketing integration.",
+        "technologies": ["React", "Flask", "Redux", "Docker", "MySQL"],
+        "teamSize": 5
+      },
+      {
+        "title": "AIPT Internal Process Web",
+        "description": "Web-based internal process management system to digitize and automate company processes. Improved operational efficiency by optimizing administrative processes.",
+        "technologies": ["ReactJS", "Flask", "MySQL", "Docker", "CI/CD"]
+      },
+      {
+        "title": "Chatbot AI - ALICE",
+        "description": "AI chatbot integrated with internal process management system. Supports natural language interaction for QA, internal document search, and database access.",
+        "technologies": ["ReactJS", "Flask", "MySQL", "Docker", "CI/CD", "Microservices"]
+      },
+      {
+        "title": "AI-Assisted Meeting Management",
+        "description": "AI platform to improve meeting audio quality with noise reduction, echo cancellation, and volume normalization. Processes audio and converts to text.",
+        "technologies": ["NodeJS", "ReactJS", "MongoDB", "MySQL", "Flask", "Docker", "Microservices"]
+      },
+      {
+        "title": "Video Master AI",
+        "description": "AI video analysis platform detecting and filtering human and vehicle activities. Dashboard with RESTful APIs and WebSocket for real-time result streaming.",
+        "technologies": ["ReactJS", "NodeJS", "WebSocket", "RESTful APIs", "Docker"]
+      },
+      {
+        "title": "People & License Plate Recognition",
+        "description": "Access control system based on computer vision to detect people and recognize license plates. Real-time video processing with deep learning and OCR.",
+        "technologies": ["Python", "OpenCV", "YOLO", "OCR", "Flask", "ReactJS", "PostgreSQL", "Docker"]
+      },
+      {
+        "title": "Samsung Energy Simulator",
+        "description": "Smart energy management system for Samsung to estimate electricity cost savings and optimize consumption. Simulation tool comparing energy usage levels.",
+        "technologies": ["NextJS", "NestJS", "PostgreSQL", "Docker", "CI/CD"]
+      },
+      {
+        "title": "INVESTY Platform",
+        "description": "Global job connection platform connecting Vietnamese students with international opportunities. Freelance job marketplace and course registration module.",
+        "technologies": ["ReactJS", "Redux", "NodeJS", "MongoDB", "WebSocket", "Firebase", "Docker"]
+      },
+      {
+        "title": "Data Extraction Tool - LYNX",
+        "description": "Desktop data extraction and monitoring tool for Android devices. Enables remote access and control, real-time extraction of camera, microphone, files, contacts, and messages.",
+        "technologies": ["NodeJS", "HTML", "Electron", "Java"]
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Get in touch with me",
+    "description": "I'm always ready to discuss new projects, collaboration opportunities, or simply chat about technology.",
+    "email": "Email",
+    "phone": "Phone",
+    "address": "Address",
+    "location": "Hanoi, Vietnam",
+    "form": {
+      "name": "Your Name",
+      "email": "Your Email",
+      "subject": "Subject",
+      "message": "Your Message",
+      "send": "Send Message",
+      "sending": "Sending...",
+      "success": "Thank you for contacting me! I will respond as soon as possible.",
+      "error": "An error occurred. Please try again later or contact me directly via email."
+    }
+  },
+  "footer": {
+    "copyright": "All rights reserved.",
+    "madeWith": "Made with ❤️ by Trần Quang Đạo"
+  },
+  "lienhe": {
+    "title": "Contact List",
+    "total": "Total",
+    "contacts": "contacts",
+    "noContacts": "No contacts yet.",
+    "export": "Export JSON File",
+    "import": "Import JSON File",
+    "deleteConfirm": "Are you sure you want to delete this contact?",
+    "deleteSuccess": "Contact deleted successfully",
+    "importSuccess": "Imported {count} new contacts!",
+    "error": "An error occurred"
+  }
+}
+

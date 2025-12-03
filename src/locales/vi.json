@@ -1,0 +1,197 @@
+{
+  "nav": {
+    "home": "Trang chủ",
+    "about": "Giới thiệu",
+    "skills": "Kỹ năng",
+    "experience": "Kinh nghiệm",
+    "projects": "Dự án",
+    "contact": "Liên hệ"
+  },
+  "hero": {
+    "greeting": "Xin chào, tôi là",
+    "name": "Quang Đạo",
+    "subtitle": "Full Stack Developer & Tech Leader với hơn 3 năm kinh nghiệm phát triển ứng dụng web, AI và hệ thống quản lý.",
+    "viewProjects": "Xem dự án",
+    "contact": "Liên hệ",
+    "downloadCV": "Tải CV"
+  },
+  "about": {
+    "title": "Giới thiệu",
+    "intro": "Xin chào! Tôi là <strong>Trần Quang Đạo</strong>, một <strong>Full Stack Developer</strong> và <strong>Tech Leader</strong> với niềm đam mê tạo ra những giải pháp công nghệ sáng tạo và hiệu quả.",
+    "description1": "Với hơn <strong>3 năm kinh nghiệm</strong> trong việc phát triển các ứng dụng web, hệ thống AI và giải pháp quản lý doanh nghiệp, tôi đã tích lũy được kiến thức sâu rộng về <strong>React</strong>, <strong>Node.js</strong>, <strong>Python</strong> và các công nghệ cloud hiện đại.",
+    "description2": "Tôi luôn tìm kiếm những thách thức mới và cơ hội để học hỏi, phát triển bản thân. Mục tiêu của tôi là tạo ra những sản phẩm công nghệ chất lượng cao, mang lại giá trị thực sự cho người dùng.",
+    "education": {
+      "title": "Học vấn",
+      "university": "Đại học Bách Khoa Hà Nội",
+      "degree": "Khoa học Máy tính - Tốt nghiệp loại Giỏi"
+    },
+    "achievements": {
+      "title": "Thành tích",
+      "achievement1": "Top 10 NestQuant Tournament (07/2023)",
+      "achievement2": "Top 3 Fintech Innovation Competition (06/2024)"
+    },
+    "stats": {
+      "projects": "Dự án nổi bật",
+      "experience": "Năm kinh nghiệm",
+      "awards": "Giải thưởng"
+    }
+  },
+  "skills": {
+    "title": "Kỹ năng",
+    "categories": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "database": "Database",
+      "devops": "DevOps & Cloud",
+      "others": "Others"
+    }
+  },
+  "experience": {
+    "title": "Kinh nghiệm làm việc",
+    "present": "Hiện tại",
+    "location": {
+      "vietnam": "Việt Nam",
+      "remote": "Remote"
+    },
+    "experiences": [
+      {
+        "title": "Fullstack Developer",
+        "company": "AIPTGROUP VIETNAM",
+        "location": "vietnam",
+        "period": "11/2024 - Hiện tại",
+        "description": [
+          "Phát triển hệ thống quản lý quy trình nội bộ web-based để số hóa và tự động hóa các quy trình công ty",
+          "Nâng cao hiệu quả hoạt động bằng cách tối ưu hóa các quy trình hành chính",
+          "Chịu trách nhiệm phát triển full-stack, làm việc trên cả backend và frontend",
+          "Triển khai CI/CD pipelines và containerization với Docker để hỗ trợ deployment nhanh chóng và có thể mở rộng"
+        ]
+      },
+      {
+        "title": "Tech Leader",
+        "company": "EPOSO AI (Remote Freelancer)",
+        "location": "remote",
+        "period": "11/2024 - 01/2025",
+        "description": [
+          "Dẫn dắt team phát triển hệ thống quản lý năng lượng thông minh cho Samsung",
+          "Xây dựng công cụ mô phỏng để so sánh mức sử dụng năng lượng",
+          "Tạo phân khúc người dùng cho Việt Nam, Ấn Độ và Thái Lan với mô hình giá điện địa phương hóa",
+          "Sử dụng NextJS, NestJS, PostgreSQL, Docker và CI/CD"
+        ]
+      },
+      {
+        "title": "Tech Leader",
+        "company": "INVESTY CO LTD",
+        "location": "vietnam",
+        "period": "11/2023 - 11/2024",
+        "description": [
+          "Phát triển nền tảng kết nối việc làm toàn cầu kết nối sinh viên Việt Nam với cơ hội quốc tế",
+          "Xây dựng thị trường việc làm freelance cho tuyển dụng theo dự án",
+          "Tích hợp module đăng ký khóa học cho các trường đại học Hàn Quốc",
+          "Sử dụng ReactJS, Redux, NodeJS, MongoDB, WebSocket, Firebase"
+        ]
+      },
+      {
+        "title": "Fullstack Developer",
+        "company": "BKC Labs",
+        "location": "vietnam",
+        "period": "09/2022 - 10/2023",
+        "description": [
+          "Phát triển các ứng dụng web full-stack sử dụng React và Node.js",
+          "Thiết kế và triển khai RESTful APIs",
+          "Làm việc với team để phát triển các tính năng mới",
+          "Tối ưu hóa hiệu suất và trải nghiệm người dùng"
+        ]
+      }
+    ]
+  },
+  "projects": {
+    "title": "Dự án",
+    "viewCode": "Xem mã",
+    "liveDemo": "Xem demo",
+    "teamSize": "Quy mô team",
+    "projects": [
+      {
+        "title": "CRM Management System",
+        "description": "Hệ thống quản lý quan hệ khách hàng (CRM) toàn diện với dashboard analytics, quản lý leads, sales pipeline, và báo cáo chi tiết. Hỗ trợ real-time updates và tích hợp email marketing.",
+        "technologies": ["React", "Flask", "Redux", "Docker", "MySQL"],
+        "teamSize": 5
+      },
+      {
+        "title": "AIPT Internal Process Web",
+        "description": "Hệ thống quản lý quy trình nội bộ web-based để số hóa và tự động hóa các quy trình công ty. Nâng cao hiệu quả hoạt động bằng cách tối ưu hóa các quy trình hành chính.",
+        "technologies": ["ReactJS", "Flask", "MySQL", "Docker", "CI/CD"]
+      },
+      {
+        "title": "Chatbot AI - ALICE",
+        "description": "Chatbot AI được tích hợp với hệ thống quản lý quy trình nội bộ. Hỗ trợ tương tác ngôn ngữ tự nhiên cho QA, tìm kiếm tài liệu nội bộ và truy cập database.",
+        "technologies": ["ReactJS", "Flask", "MySQL", "Docker", "CI/CD", "Microservices"]
+      },
+      {
+        "title": "AI-Assisted Meeting Management",
+        "description": "Nền tảng AI hỗ trợ cải thiện chất lượng âm thanh cuộc họp với noise reduction, echo cancellation và volume normalization. Xử lý audio và chuyển đổi sang text.",
+        "technologies": ["NodeJS", "ReactJS", "MongoDB", "MySQL", "Flask", "Docker", "Microservices"]
+      },
+      {
+        "title": "Video Master AI",
+        "description": "Nền tảng phân tích video AI phát hiện và lọc hoạt động của người và phương tiện. Dashboard với RESTful APIs và WebSocket để stream kết quả real-time.",
+        "technologies": ["ReactJS", "NodeJS", "WebSocket", "RESTful APIs", "Docker"]
+      },
+      {
+        "title": "People & License Plate Recognition",
+        "description": "Hệ thống kiểm soát ra vào dựa trên computer vision để phát hiện người và nhận dạng biển số xe. Xử lý video real-time với deep learning và OCR.",
+        "technologies": ["Python", "OpenCV", "YOLO", "OCR", "Flask", "ReactJS", "PostgreSQL", "Docker"]
+      },
+      {
+        "title": "Samsung Energy Simulator",
+        "description": "Hệ thống quản lý năng lượng thông minh cho Samsung để ước tính tiết kiệm chi phí điện và tối ưu hóa tiêu thụ. Công cụ mô phỏng so sánh mức sử dụng năng lượng.",
+        "technologies": ["NextJS", "NestJS", "PostgreSQL", "Docker", "CI/CD"]
+      },
+      {
+        "title": "INVESTY Platform",
+        "description": "Nền tảng kết nối việc làm toàn cầu kết nối sinh viên Việt Nam với cơ hội quốc tế. Thị trường việc làm freelance và module đăng ký khóa học.",
+        "technologies": ["ReactJS", "Redux", "NodeJS", "MongoDB", "WebSocket", "Firebase", "Docker"]
+      },
+      {
+        "title": "Data Extraction Tool - LYNX",
+        "description": "Công cụ trích xuất và giám sát dữ liệu desktop cho thiết bị Android. Cho phép truy cập và điều khiển từ xa, trích xuất real-time camera, microphone, files, contacts và messages.",
+        "technologies": ["NodeJS", "HTML", "Electron", "Java"]
+      }
+    ]
+  },
+  "contact": {
+    "title": "Liên hệ",
+    "subtitle": "Hãy liên hệ với tôi",
+    "description": "Tôi luôn sẵn sàng thảo luận về các dự án mới, cơ hội hợp tác hoặc chỉ đơn giản là trò chuyện về công nghệ.",
+    "email": "Email",
+    "phone": "Điện thoại",
+    "address": "Địa chỉ",
+    "location": "Hà Nội, Việt Nam",
+    "form": {
+      "name": "Tên của bạn",
+      "email": "Email của bạn",
+      "subject": "Chủ đề",
+      "message": "Tin nhắn của bạn",
+      "send": "Gửi tin nhắn",
+      "sending": "Đang gửi...",
+      "success": "Cảm ơn bạn đã liên hệ! Tôi sẽ phản hồi sớm nhất có thể.",
+      "error": "Có lỗi xảy ra. Vui lòng thử lại sau hoặc liên hệ trực tiếp qua email."
+    }
+  },
+  "footer": {
+    "copyright": "Tất cả quyền được bảo lưu.",
+    "madeWith": "Made with ❤️ by Trần Quang Đạo"
+  },
+  "lienhe": {
+    "title": "Danh sách liên hệ",
+    "total": "Tổng số",
+    "contacts": "liên hệ",
+    "noContacts": "Chưa có liên hệ nào.",
+    "export": "Xuất file JSON",
+    "import": "Nhập file JSON",
+    "deleteConfirm": "Bạn có chắc chắn muốn xóa liên hệ này?",
+    "deleteSuccess": "Đã xóa liên hệ thành công",
+    "importSuccess": "Đã import {count} liên hệ mới!",
+    "error": "Có lỗi xảy ra"
+  }
+}
+
