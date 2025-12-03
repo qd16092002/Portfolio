@@ -1,33 +1,24 @@
 import React from 'react';
-import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
+import { FaGithub } from 'react-icons/fa';
 import { useLanguage } from '../../../hooks/useLanguage';
 import './Projects.css';
-
-import crm from '../../../assets/Project/CRM/crm.png';
-import dbms from '../../../assets/Project/DBMS/dbms.png';
-import alice from '../../../assets/Project/ChatbotAI/alice.png';
-import meeting from '../../../assets/Project/Meeting/voice.png';
-import video from '../../../assets/Project/Video/video.png';
-import access from '../../../assets/Project/AccessControl/vision.png';
-import samsung from '../../../assets/Project/SamSung/samsung.png';
-import investy from '../../../assets/Project/Investy/investy.png';
-import lynx from '../../../assets/Project/LYNX/lynx.png';
 
 const Projects = () => {
   const { t } = useLanguage();
   const projectsData = t('projects.projects') || [];
   
   // Map projects với images và links
+  // Images từ public folder sử dụng đường dẫn tuyệt đối
   const imageUrls = [
-    crm,
-    dbms,
-    alice,
-    meeting,
-    video,
-    access,
-    samsung,
-    investy,
-    lynx
+    '/crm.png',
+    '/dbms.png',
+    '/alice.png',
+    '/voice.png',
+    '/video.png',
+    '/vision.png',
+    '/samsung.png',
+    '/investy.png',
+    '/lynx.png'
   ];
   
   const projects = projectsData.map((project, index) => ({
