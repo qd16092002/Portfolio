@@ -1,67 +1,101 @@
 import React from 'react';
-import { FaGithub } from 'react-icons/fa';
-import { useLanguage } from '../../../hooks/useLanguage';
+import { FaGithub, FaUsers, FaArrowRight } from 'react-icons/fa';
+import { useLanguage } from '../../../context/LanguageContext';
+import SectionHeader from '../../common/SectionHeader';
+import Reveal from '../../common/Reveal';
+import { PROFILE } from '../../../data/profile';
+import { asset } from '../../../lib/asset';
 import './Projects.css';
+
+const MAX_VISIBLE_TAGS = 5;
 
 const Projects = () => {
   const { t } = useLanguage();
-  const projectsData = t('projects.projects') || [];
-  
-  // Map projects với images và links
-  // Images từ public folder sử dụng đường dẫn tuyệt đối
-  const imageUrls = [
-    '/crm.png',
-    '/dbms.png',
-    '/alice.png',
-    '/voice.png',
-    '/video.png',
-    '/vision.png',
-    '/samsung.png',
-    '/investy.png',
-    '/lynx.png'
-  ];
-  
-  const projects = projectsData.map((project, index) => ({
-    ...project,
-    image: imageUrls[index] || 'https://via.placeholder.com/400x250',
-    github: 'https://github.com/qd16092002',
-    demo: '#'
-  }));
+  const projects = t('projects.projects');
+  const list = Array.isArray(projects) ? projects : [];
 
   return (
-    <section id="projects" className="projects">
+    <section
+      id="projects"
+      className="section section--subtle projects"
+      aria-labelledby="projects-title"
+    >
       <div className="container">
-        <h2 className="section-title">{t('projects.title')}</h2>
-        <div className="projects-grid">
-          {projects.map((project, index) => (
-            <div key={index} className="project-card">
-              <div className="project-image">
-                <img src={project.image} alt={project.title} />
-                <div className="project-overlay">
-                  <a href={project.github} target="_blank" rel="noopener noreferrer" className="project-link">
-                    <FaGithub />
-                  </a>
-                  {/* <a href={project.demo} target="_blank" rel="noopener noreferrer" className="project-link">
-                    <FaExternalLinkAlt />
-                  </a> */}
+        <SectionHeader
+          eyebrow={t('projects.eyebrow')}
+          title={t('projects.title')}
+          subtitle={t('projects.subtitle')}
+          id="projects-title"
+        />
+
+        <ul className="projects__grid">
+          {list.map((project, index) => {
+            const visibleTags = project.technologies.slice(0, MAX_VISIBLE_TAGS);
+            const hiddenCount = project.technologies.length - visibleTags.length;
+
+            return (
+              <Reveal
+                as="li"
+                className="card project"
+                key={project.id}
+                delay={(index % 3) * 70}
+              >
+                <div className="project__media">
+                  <img
+                    src={asset(`/projects/${project.id}.webp`)}
+                    alt={project.title}
+                    width="1200"
+                    height="750"
+                    loading={index < 3 ? 'eager' : 'lazy'}
+                    decoding="async"
+                  />
                 </div>
-              </div>
-              <div className="project-content">
-                <h3 className="project-title">{project.title}</h3>
-                <p className="project-description">{project.description}</p>
-                <div className="project-technologies">
-                  {project.technologies.map((tech, techIndex) => (
-                    <span key={techIndex} className="tech-tag">{tech}</span>
-                  ))}
+
+                <div className="project__body">
+                  <h3 className="project__title">{project.title}</h3>
+                  <p className="project__description">{project.description}</p>
+
+                  <div className="project__footer">
+                    <ul className="project__tags">
+                      {visibleTags.map((tech) => (
+                        <li className="tag" key={tech}>
+                          {tech}
+                        </li>
+                      ))}
+                      {hiddenCount > 0 && (
+                        <li className="tag">+{hiddenCount}</li>
+                      )}
+                    </ul>
+
+                    {project.teamSize && (
+                      <p className="project__team">
+                        <FaUsers aria-hidden="true" />
+                        {t('projects.teamSize')}: {project.teamSize}
+                      </p>
+                    )}
+                  </div>
                 </div>
-              </div>
-            </div>
-          ))}
-        </div>
+              </Reveal>
+            );
+          })}
+        </ul>
+
+        <Reveal className="projects__cta">
+          <p>{t('projects.ctaNote')}</p>
+          <a
+            className="btn btn--secondary"
+            href={PROFILE.github}
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <FaGithub aria-hidden="true" />
+            {t('projects.ctaButton')}
+            <FaArrowRight aria-hidden="true" />
+          </a>
+        </Reveal>
       </div>
     </section>
   );
 };
 
 export default Projects;
-

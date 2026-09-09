@@ -1,75 +1,96 @@
 import React from 'react';
-import { FaGraduationCap, FaTrophy, FaCode, FaRocket } from 'react-icons/fa';
-import { useLanguage } from '../../../hooks/useLanguage';
+import { FaGraduationCap, FaTrophy } from 'react-icons/fa';
+import { useLanguage } from '../../../context/LanguageContext';
+import SectionHeader from '../../common/SectionHeader';
+import Reveal from '../../common/Reveal';
 import './About.css';
+
+/**
+ * The intro copy carries <strong> emphasis. The markup is authored by us in
+ * src/locales, never user input, so injecting it is safe here.
+ */
+const RichText = ({ html, className }) => (
+  <p className={className} dangerouslySetInnerHTML={{ __html: html }} />
+);
 
 const About = () => {
   const { t } = useLanguage();
-  return (
-    <section id="about" className="about">
-      <div className="container">
-        <h2 className="section-title">{t('about.title')}</h2>
-        <div className="about-content">
-          <div className="about-main">
-            <div className="about-text">
-              <p className="about-intro" dangerouslySetInnerHTML={{ __html: t('about.intro') }}></p>
-              <p dangerouslySetInnerHTML={{ __html: t('about.description1') }}></p>
-              <p>{t('about.description2')}</p>
-            </div>
-            
-            <div className="about-highlights">
-              <div className="highlight-item">
-                <div className="highlight-icon">
-                  <FaGraduationCap />
-                </div>
-                <div className="highlight-content">
-                  <h4>{t('about.education.title')}</h4>
-                  <p>{t('about.education.university')}</p>
-                  <span>{t('about.education.degree')}</span>
-                </div>
-              </div>
-              
-              <div className="highlight-item">
-                <div className="highlight-icon">
-                  <FaTrophy />
-                </div>
-                <div className="highlight-content">
-                  <h4>{t('about.achievements.title')}</h4>
-                  <p>{t('about.achievements.achievement1')}</p>
-                  <span>{t('about.achievements.achievement2')}</span>
-                </div>
-              </div>
-            </div>
-          </div>
 
-          <div className="about-stats">
-            <div className="stat-item">
-              <div className="stat-icon">
-                <FaCode />
+  const stats = [
+    { value: t('about.stats.projectsValue'), label: t('about.stats.projects') },
+    {
+      value: t('about.stats.experienceValue'),
+      label: t('about.stats.experience'),
+    },
+    {
+      value: t('about.stats.technologiesValue'),
+      label: t('about.stats.technologies'),
+    },
+    { value: t('about.stats.awardsValue'), label: t('about.stats.awards') },
+  ];
+
+  return (
+    <section id="about" className="section about" aria-labelledby="about-title">
+      <div className="container">
+        <SectionHeader
+          eyebrow={t('about.eyebrow')}
+          title={t('about.title')}
+          id="about-title"
+        />
+
+        <div className="about__grid">
+          <Reveal className="about__prose">
+            <RichText className="about__lead" html={t('about.intro')} />
+            <RichText html={t('about.description1')} />
+            <RichText html={t('about.description2')} />
+          </Reveal>
+
+          <div className="about__aside">
+            <Reveal className="card about__card" delay={80}>
+              <span className="about__card-icon" aria-hidden="true">
+                <FaGraduationCap />
+              </span>
+              <div>
+                <h3 className="about__card-title">{t('about.education.title')}</h3>
+                <p className="about__card-primary">
+                  {t('about.education.university')}
+                </p>
+                <p className="about__card-secondary">
+                  {t('about.education.degree')}
+                </p>
               </div>
-              <h3>10+</h3>
-              <p>{t('about.stats.projects')}</p>
-            </div>
-            <div className="stat-item">
-              <div className="stat-icon">
-                <FaRocket />
-              </div>
-              <h3>3+</h3>
-              <p>{t('about.stats.experience')}</p>
-            </div>
-            <div className="stat-item">
-              <div className="stat-icon">
+            </Reveal>
+
+            <Reveal className="card about__card" delay={140}>
+              <span className="about__card-icon" aria-hidden="true">
                 <FaTrophy />
+              </span>
+              <div>
+                <h3 className="about__card-title">
+                  {t('about.achievements.title')}
+                </h3>
+                <p className="about__card-primary">
+                  {t('about.achievements.achievement1')}
+                </p>
+                <p className="about__card-primary">
+                  {t('about.achievements.achievement2')}
+                </p>
               </div>
-              <h3>2</h3>
-              <p>{t('about.stats.awards')}</p>
-            </div>
+            </Reveal>
           </div>
         </div>
+
+        <Reveal as="dl" className="about__stats" delay={80}>
+          {stats.map((stat) => (
+            <div className="about__stat" key={stat.label}>
+              <dt className="about__stat-value">{stat.value}</dt>
+              <dd className="about__stat-label">{stat.label}</dd>
+            </div>
+          ))}
+        </Reveal>
       </div>
     </section>
   );
 };
 
 export default About;
-

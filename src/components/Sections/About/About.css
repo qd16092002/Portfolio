@@ -1,187 +1,150 @@
-.about {
-  background: var(--bg-secondary);
-}
-
-.about-content {
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-.about-main {
-  margin-bottom: 3rem;
-}
-
-.about-text {
-  background: white;
-  padding: 2.5rem;
-  border-radius: 16px;
-  box-shadow: var(--shadow);
-  margin-bottom: 2rem;
-}
-
-.about-intro {
-  font-size: 1.3rem;
-  line-height: 1.8;
-  color: var(--text-primary);
-  margin-bottom: 1.5rem;
-  font-weight: 500;
-}
-
-.about-text p {
-  font-size: 1.05rem;
-  line-height: 1.9;
-  color: var(--text-secondary);
-  margin-bottom: 1.25rem;
-}
-
-.about-text p:last-child {
-  margin-bottom: 0;
-}
-
-.about-text strong {
-  color: var(--primary-color);
-  font-weight: 600;
-}
-
-.about-highlights {
+.about__grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1.5rem;
-  margin-bottom: 2rem;
+  grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr);
+  gap: clamp(2rem, 1rem + 3.5vw, 4rem);
+  align-items: start;
 }
 
-.highlight-item {
-  background: white;
-  padding: 1.75rem;
-  border-radius: 12px;
-  box-shadow: var(--shadow);
+/* Prose -------------------------------------------------------------------- */
+
+.about__prose p {
+  font-size: var(--fs-body);
+  line-height: var(--lh-relaxed);
+  color: var(--ink-3);
+}
+
+.about__prose p + p {
+  margin-top: var(--space-4);
+}
+
+.about__lead {
+  font-size: var(--fs-lead) !important;
+  color: var(--ink-2) !important;
+}
+
+.about__prose strong {
+  font-weight: 600;
+  color: var(--ink);
+}
+
+/* Aside cards -------------------------------------------------------------- */
+
+.about__aside {
+  display: grid;
+  gap: var(--space-4);
+}
+
+.about__card {
   display: flex;
-  gap: 1.25rem;
-  align-items: flex-start;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  gap: var(--space-4);
+  padding: var(--space-5);
 }
 
-.highlight-item:hover {
-  transform: translateY(-3px);
-  box-shadow: var(--shadow-lg);
+.about__card:hover {
+  border-color: var(--line-strong);
+  box-shadow: var(--shadow-md);
 }
 
-.highlight-icon {
-  width: 50px;
-  height: 50px;
-  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-  color: white;
-  border-radius: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.5rem;
+.about__card-icon {
+  display: grid;
+  place-items: center;
   flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: var(--r-sm);
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-size: 1.0625rem;
 }
 
-.highlight-content h4 {
-  font-size: 1.1rem;
+.about__card-title {
+  font-size: var(--fs-xs);
   font-weight: 600;
-  color: var(--text-primary);
-  margin-bottom: 0.5rem;
+  letter-spacing: var(--tracking-label);
+  text-transform: uppercase;
+  color: var(--ink-3);
+  margin-bottom: var(--space-2);
 }
 
-.highlight-content p {
-  font-size: 0.95rem;
-  color: var(--text-primary);
-  margin-bottom: 0.25rem;
+.about__card-primary {
+  font-size: var(--fs-sm);
   font-weight: 500;
+  color: var(--ink);
 }
 
-.highlight-content span {
-  font-size: 0.85rem;
-  color: var(--text-secondary);
+.about__card-primary + .about__card-primary {
+  margin-top: var(--space-1);
 }
 
-.about-stats {
+.about__card-secondary {
+  margin-top: var(--space-1);
+  font-size: var(--fs-xs);
+  color: var(--ink-3);
+}
+
+/* Stats -------------------------------------------------------------------- */
+
+/* The 1px grid gap over a line-coloured background draws the dividers, so
+   they stay correct however many columns the grid wraps to. */
+.about__stats {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1.5rem;
-  margin-top: 2rem;
-}
-
-.stat-item {
-  background: white;
-  padding: 2rem 1.5rem;
-  border-radius: 16px;
-  box-shadow: var(--shadow);
-  text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  position: relative;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1px;
+  margin-top: var(--space-9);
+  background: var(--line);
+  border: 1px solid var(--line);
+  border-radius: var(--r-lg);
   overflow: hidden;
 }
 
-.stat-item::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 4px;
-  background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+.about__stat {
+  padding: var(--space-6) var(--space-5);
+  text-align: center;
+  background: var(--bg);
 }
 
-.stat-item:hover {
-  transform: translateY(-5px);
-  box-shadow: var(--shadow-lg);
+.about__stat-value {
+  font-size: clamp(1.75rem, 1.4rem + 1.4vw, 2.5rem);
+  font-weight: 650;
+  letter-spacing: var(--tracking-display);
+  color: var(--ink);
 }
 
-.stat-icon {
-  width: 60px;
-  height: 60px;
-  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-  color: white;
-  border-radius: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.5rem;
-  margin: 0 auto 1rem;
+.about__stat-label {
+  margin-top: var(--space-1);
+  font-size: var(--fs-sm);
+  color: var(--ink-3);
 }
 
-.stat-item h3 {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: var(--primary-color);
-  margin-bottom: 0.5rem;
-}
+/* Responsive --------------------------------------------------------------- */
 
-.stat-item p {
-  color: var(--text-secondary);
-  font-size: 1rem;
-  margin: 0;
-  font-weight: 500;
-}
-
-@media (max-width: 768px) {
-  .about-text {
-    padding: 1.75rem;
+@media (max-width: 900px) {
+  .about__grid {
+    grid-template-columns: 1fr;
   }
+}
 
-  .about-intro {
-    font-size: 1.15rem;
+@media (max-width: 860px) {
+  .about__stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+}
 
-  .about-text p {
-    font-size: 1rem;
-  }
-
-  .about-highlights {
+@media (max-width: 560px) {
+  .about__stats {
     grid-template-columns: 1fr;
   }
 
-  .about-stats {
-    grid-template-columns: 1fr;
-    gap: 1.25rem;
+  .about__stat {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: var(--space-4);
+    padding: var(--space-4) var(--space-5);
+    text-align: left;
   }
 
-  .stat-item {
-    padding: 1.5rem;
+  .about__stat-label {
+    margin-top: 0;
   }
 }
-

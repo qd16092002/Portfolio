@@ -1,120 +1,127 @@
-.projects {
-  background: var(--bg-primary);
-}
-
-.projects-grid {
+.projects__grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: var(--space-5);
 }
 
-.project-card {
-  background: white;
-  border-radius: 12px;
+.project {
+  display: flex;
+  flex-direction: column;
   overflow: hidden;
-  box-shadow: var(--shadow);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: var(--bg);
 }
 
-.project-card:hover {
-  transform: translateY(-5px);
+.project:hover {
+  border-color: var(--line-strong);
   box-shadow: var(--shadow-lg);
+  transform: translateY(-3px);
 }
 
-.project-image {
+/* Media -------------------------------------------------------------------- */
+
+.project__media {
   position: relative;
-  width: 100%;
-  height: 250px;
+  aspect-ratio: 16 / 10;
   overflow: hidden;
+  background: var(--bg-muted);
+  border-bottom: 1px solid var(--line);
 }
 
-.project-image img {
+.project__media img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.3s ease;
+  transition: transform var(--dur-slow) var(--ease);
 }
 
-.project-card:hover .project-image img {
-  transform: scale(1.1);
+.project:hover .project__media img {
+  transform: scale(1.03);
 }
 
-.project-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(99, 102, 241, 0.9);
+/* Body --------------------------------------------------------------------- */
+
+.project__body {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1.5rem;
-  opacity: 0;
-  transition: opacity 0.3s ease;
+  flex-direction: column;
+  flex: 1;
+  padding: var(--space-5);
 }
 
-.project-card:hover .project-overlay {
-  opacity: 1;
-}
-
-.project-link {
-  width: 50px;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: white;
-  border-radius: 50%;
-  color: var(--primary-color);
-  font-size: 1.25rem;
-  text-decoration: none;
-  transition: transform 0.3s ease;
-}
-
-.project-link:hover {
-  transform: scale(1.1);
-}
-
-.project-content {
-  padding: 1.5rem;
-}
-
-.project-title {
-  font-size: 1.5rem;
+.project__title {
+  font-size: var(--fs-h3);
   font-weight: 600;
-  color: var(--text-primary);
-  margin-bottom: 0.75rem;
+  color: var(--ink);
 }
 
-.project-description {
-  color: var(--text-secondary);
-  line-height: 1.6;
-  margin-bottom: 1rem;
+.project__description {
+  margin-top: var(--space-3);
+  font-size: var(--fs-sm);
+  line-height: var(--lh-relaxed);
+  color: var(--ink-3);
 }
 
-.project-technologies {
+.project__footer {
+  margin-top: auto;
+  padding-top: var(--space-5);
+}
+
+.project__tags {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem;
+  gap: var(--space-2);
 }
 
-.tech-tag {
-  padding: 0.25rem 0.75rem;
-  background: var(--bg-secondary);
-  color: var(--primary-color);
-  border-radius: 20px;
-  font-size: 0.85rem;
-  font-weight: 500;
+.project__team {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  margin-top: var(--space-3);
+  font-size: var(--fs-xs);
+  color: var(--ink-3);
 }
 
-@media (max-width: 768px) {
-  .projects-grid {
+/* Section CTA -------------------------------------------------------------- */
+
+.projects__cta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+  margin-top: var(--space-8);
+  padding: var(--space-5) var(--space-6);
+  border: 1px dashed var(--line-strong);
+  border-radius: var(--r-lg);
+}
+
+.projects__cta p {
+  font-size: var(--fs-sm);
+  color: var(--ink-3);
+}
+
+@media (max-width: 480px) {
+  .projects__grid {
     grid-template-columns: 1fr;
   }
 
-  .project-image {
-    height: 200px;
+  .projects__cta {
+    flex-direction: column;
+    align-items: stretch;
+    text-align: center;
+    padding: var(--space-5) var(--space-4);
+  }
+
+  .projects__cta .btn {
+    width: 100%;
   }
 }
 
+@media (prefers-reduced-motion: reduce) {
+  .project:hover {
+    transform: none;
+  }
+
+  .project:hover .project__media img {
+    transform: none;
+  }
+}

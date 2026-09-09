@@ -1,25 +1,41 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
+import { LanguageProvider, useLanguage } from './context/LanguageContext';
 import Header from './components/Layout/Header';
 import Footer from './components/Layout/Footer';
-import Home from './pages/Home';
-import LienHe from './pages/LienHe';
+import Hero from './components/Sections/Hero';
+import About from './components/Sections/About';
+import Skills from './components/Sections/Skills';
+import Experience from './components/Sections/Experience';
+import Projects from './components/Sections/Projects';
+import Contact from './components/Sections/Contact';
 
-function App() {
+const Portfolio = () => {
+  const { t } = useLanguage();
+
   return (
-    <Router>
-      <div className="App">
-        <Header />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/lienhe" element={<LienHe />} />
-        </Routes>
-        <Footer />
-      </div>
-    </Router>
+    <div className="app">
+      <a className="skip-link" href="#main">
+        {t('a11y.skipToContent')}
+      </a>
+      <Header />
+      <main id="main">
+        <Hero />
+        <About />
+        <Skills />
+        <Experience />
+        <Projects />
+        <Contact />
+      </main>
+      <Footer />
+    </div>
   );
-}
+};
+
+const App = () => (
+  <LanguageProvider>
+    <Portfolio />
+  </LanguageProvider>
+);
 
 export default App;
-

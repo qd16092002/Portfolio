@@ -1,6 +1,5 @@
 {
   "nav": {
-    "home": "Trang chủ",
     "about": "Giới thiệu",
     "skills": "Kỹ năng",
     "experience": "Kinh nghiệm",
@@ -9,17 +8,16 @@
   },
   "hero": {
     "greeting": "Xin chào, tôi là",
-    "name": "Quang Đạo",
-    "subtitle": "Full Stack Developer & Tech Leader với hơn 3 năm kinh nghiệm phát triển ứng dụng web, AI và hệ thống quản lý.",
+    "subtitle": "Hơn 4 năm xây dựng nền tảng web và hệ thống AI ứng dụng cho lĩnh vực an ninh - quốc phòng.",
     "viewProjects": "Xem dự án",
-    "contact": "Liên hệ",
-    "downloadCV": "Tải CV"
+    "downloadCV": "Tải CV",
+    "role": "Full Stack Developer & Tech Leader"
   },
   "about": {
     "title": "Giới thiệu",
-    "intro": "Xin chào! Tôi là <strong>Trần Quang Đạo</strong>, một <strong>Full Stack Developer</strong> và <strong>Tech Leader</strong> với niềm đam mê tạo ra những giải pháp công nghệ sáng tạo và hiệu quả.",
-    "description1": "Với hơn <strong>3 năm kinh nghiệm</strong> trong việc phát triển các ứng dụng web, hệ thống AI và giải pháp quản lý doanh nghiệp, tôi đã tích lũy được kiến thức sâu rộng về <strong>React</strong>, <strong>Node.js</strong>, <strong>Python</strong> và các công nghệ cloud hiện đại.",
-    "description2": "Tôi luôn tìm kiếm những thách thức mới và cơ hội để học hỏi, phát triển bản thân. Mục tiêu của tôi là tạo ra những sản phẩm công nghệ chất lượng cao, mang lại giá trị thực sự cho người dùng.",
+    "intro": "Tôi là <strong>Trần Quang Đạo</strong>, <strong>Trưởng nhóm Kỹ thuật Phần mềm</strong> tại <strong>AIPTGROUP VIETNAM</strong>. Tôi xây dựng các sản phẩm phần mềm chuyên biệt và hệ thống AI ứng dụng cho lĩnh vực <strong>an ninh - quốc phòng</strong>, đồng thời dẫn dắt đội ngũ triển khai chúng.",
+    "description1": "Công việc của tôi trải từ computer vision thời gian thực cho kiểm soát ra vào và nhận dạng biển số, phân tích video và âm thanh bằng AI, đến các nền tảng vận hành nội bộ: CRM, tự động hóa quy trình và chatbot AI truy vấn tài liệu, cơ sở dữ liệu nội bộ. Ở đây độ chính xác, độ trễ và khả năng triển khai tái lập quan trọng hơn hình thức bề ngoài.",
+    "description2": "Tôi làm việc xuyên suốt cả stack — <strong>React</strong>, <strong>Next.js</strong>, <strong>Node.js</strong>, <strong>NestJS</strong>, <strong>Python</strong> và <strong>Flask</strong> — cùng <strong>OpenCV</strong>, <strong>YOLO</strong>, <strong>OCR</strong> cho các bài toán thị giác và <strong>Docker</strong>, <strong>CI/CD</strong> cho khâu triển khai. Trước AIPT, tôi là Tech Leader tại <strong>EPOSO AI</strong>, xây dựng nền tảng mô phỏng năng lượng cho <strong>Samsung</strong>, và tại <strong>INVESTY</strong>.",
     "education": {
       "title": "Học vấn",
       "university": "Đại học Bách Khoa Hà Nội",
@@ -31,10 +29,16 @@
       "achievement2": "Top 3 Fintech Innovation Competition (06/2024)"
     },
     "stats": {
-      "projects": "Dự án nổi bật",
+      "projects": "Dự án đã thực hiện",
       "experience": "Năm kinh nghiệm",
-      "awards": "Giải thưởng"
-    }
+      "awards": "Giải thưởng",
+      "technologies": "Công nghệ",
+      "projectsValue": "20+",
+      "experienceValue": "4+",
+      "awardsValue": "2",
+      "technologiesValue": "30+"
+    },
+    "eyebrow": "Giới thiệu"
   },
   "skills": {
     "title": "Kỹ năng",
@@ -42,28 +46,44 @@
       "frontend": "Frontend",
       "backend": "Backend",
       "database": "Database",
+      "ai": "AI & Thị giác máy tính",
       "devops": "DevOps & Cloud",
       "others": "Others"
-    }
+    },
+    "eyebrow": "Công nghệ",
+    "subtitle": "Những công nghệ tôi sử dụng thường xuyên, phân theo từng lớp trong hệ thống."
   },
   "experience": {
     "title": "Kinh nghiệm làm việc",
-    "present": "Hiện tại",
     "location": {
       "vietnam": "Việt Nam",
       "remote": "Remote"
     },
     "experiences": [
       {
+        "title": "Trưởng nhóm Kỹ thuật Phần mềm",
+        "company": "AIPTGROUP VIETNAM",
+        "location": "vietnam",
+        "period": "04/2026 - Hiện tại",
+        "description": [
+          "Quản lý nhóm phần mềm: lập kế hoạch, phân bổ công việc, đảm bảo tiến độ các dự án công ty đề ra",
+          "Chịu trách nhiệm định hướng kỹ thuật, quyết định kiến trúc và tiêu chuẩn review code",
+          "Nghiên cứu phát triển sản phẩm: đánh giá công nghệ mới, chuyển yêu cầu nghiệp vụ thành phương án kỹ thuật",
+          "Đào tạo và phát triển thành viên qua onboarding, review code và phản hồi 1-1 định kỳ",
+          "Quản lý kế hoạch phát hành, rủi ro kỹ thuật và phối hợp liên phòng ban"
+        ]
+      },
+      {
         "title": "Fullstack Developer",
         "company": "AIPTGROUP VIETNAM",
         "location": "vietnam",
-        "period": "11/2024 - Hiện tại",
+        "period": "11/2024 - 04/2026",
         "description": [
-          "Phát triển hệ thống quản lý quy trình nội bộ web-based để số hóa và tự động hóa các quy trình công ty",
-          "Nâng cao hiệu quả hoạt động bằng cách tối ưu hóa các quy trình hành chính",
-          "Chịu trách nhiệm phát triển full-stack, làm việc trên cả backend và frontend",
-          "Triển khai CI/CD pipelines và containerization với Docker để hỗ trợ deployment nhanh chóng và có thể mở rộng"
+          "Xây dựng các sản phẩm phần mềm chuyên biệt và AI ứng dụng cho lĩnh vực an ninh - quốc phòng",
+          "Computer vision thời gian thực cho kiểm soát ra vào: phát hiện người và nhận dạng biển số (Python, OpenCV, YOLO, OCR)",
+          "Video Master AI — nền tảng phân tích video, truyền kết quả nhận dạng qua RESTful API và WebSocket",
+          "ALICE — chatbot AI truy vấn tài liệu và cơ sở dữ liệu nội bộ, tích hợp vào hệ thống quản lý quy trình",
+          "Nền tảng quản lý quy trình nội bộ và CRM, triển khai bằng Docker và CI/CD trên kiến trúc microservices"
         ]
       },
       {
@@ -72,10 +92,9 @@
         "location": "remote",
         "period": "11/2024 - 01/2025",
         "description": [
-          "Dẫn dắt team phát triển hệ thống quản lý năng lượng thông minh cho Samsung",
-          "Xây dựng công cụ mô phỏng để so sánh mức sử dụng năng lượng",
-          "Tạo phân khúc người dùng cho Việt Nam, Ấn Độ và Thái Lan với mô hình giá điện địa phương hóa",
-          "Sử dụng NextJS, NestJS, PostgreSQL, Docker và CI/CD"
+          "Dẫn dắt nhóm xây dựng hệ thống quản lý năng lượng thông minh cho Samsung",
+          "Xây dựng công cụ mô phỏng so sánh mức tiêu thụ năng lượng, với mô hình giá điện riêng cho Việt Nam, Ấn Độ và Thái Lan",
+          "Công nghệ: NextJS, NestJS, PostgreSQL, Docker, CI/CD"
         ]
       },
       {
@@ -84,10 +103,9 @@
         "location": "vietnam",
         "period": "11/2023 - 11/2024",
         "description": [
-          "Phát triển nền tảng kết nối việc làm toàn cầu kết nối sinh viên Việt Nam với cơ hội quốc tế",
-          "Xây dựng thị trường việc làm freelance cho tuyển dụng theo dự án",
-          "Tích hợp module đăng ký khóa học cho các trường đại học Hàn Quốc",
-          "Sử dụng ReactJS, Redux, NodeJS, MongoDB, WebSocket, Firebase"
+          "Dẫn dắt phát triển nền tảng kết nối sinh viên Việt Nam với cơ hội việc làm quốc tế",
+          "Xây dựng sàn freelance tuyển dụng theo dự án và module đăng ký khóa học cho các trường đại học Hàn Quốc",
+          "Công nghệ: ReactJS, Redux, NodeJS, MongoDB, WebSocket, Firebase"
         ]
       },
       {
@@ -96,71 +114,142 @@
         "location": "vietnam",
         "period": "09/2022 - 10/2023",
         "description": [
-          "Phát triển các ứng dụng web full-stack sử dụng React và Node.js",
-          "Thiết kế và triển khai RESTful APIs",
-          "Làm việc với team để phát triển các tính năng mới",
-          "Tối ưu hóa hiệu suất và trải nghiệm người dùng"
+          "Xây dựng ứng dụng web full-stack với React và Node.js",
+          "Thiết kế và triển khai RESTful API",
+          "Tối ưu hiệu năng và trải nghiệm người dùng cùng đội sản phẩm"
         ]
       }
-    ]
+    ],
+    "eyebrow": "Sự nghiệp"
   },
   "projects": {
     "title": "Dự án",
-    "viewCode": "Xem mã",
-    "liveDemo": "Xem demo",
     "teamSize": "Quy mô team",
     "projects": [
       {
+        "id": "crm",
         "title": "CRM Management System",
         "description": "Hệ thống quản lý quan hệ khách hàng (CRM) toàn diện với dashboard analytics, quản lý leads, sales pipeline, và báo cáo chi tiết. Hỗ trợ real-time updates và tích hợp email marketing.",
-        "technologies": ["React", "Flask", "Redux", "Docker", "MySQL"],
+        "technologies": [
+          "React",
+          "Flask",
+          "Redux",
+          "Docker",
+          "MySQL"
+        ],
         "teamSize": 5
       },
       {
+        "id": "dbms",
         "title": "AIPT Internal Process Web",
         "description": "Hệ thống quản lý quy trình nội bộ web-based để số hóa và tự động hóa các quy trình công ty. Nâng cao hiệu quả hoạt động bằng cách tối ưu hóa các quy trình hành chính.",
-        "technologies": ["ReactJS", "Flask", "MySQL", "Docker", "CI/CD"]
+        "technologies": [
+          "ReactJS",
+          "Flask",
+          "MySQL",
+          "Docker",
+          "CI/CD"
+        ]
       },
       {
+        "id": "alice",
         "title": "Chatbot AI - ALICE",
         "description": "Chatbot AI được tích hợp với hệ thống quản lý quy trình nội bộ. Hỗ trợ tương tác ngôn ngữ tự nhiên cho QA, tìm kiếm tài liệu nội bộ và truy cập database.",
-        "technologies": ["ReactJS", "Flask", "MySQL", "Docker", "CI/CD", "Microservices"]
+        "technologies": [
+          "ReactJS",
+          "Flask",
+          "MySQL",
+          "Docker",
+          "CI/CD",
+          "Microservices"
+        ]
       },
       {
+        "id": "voice",
         "title": "AI-Assisted Meeting Management",
         "description": "Nền tảng AI hỗ trợ cải thiện chất lượng âm thanh cuộc họp với noise reduction, echo cancellation và volume normalization. Xử lý audio và chuyển đổi sang text.",
-        "technologies": ["NodeJS", "ReactJS", "MongoDB", "MySQL", "Flask", "Docker", "Microservices"]
+        "technologies": [
+          "NodeJS",
+          "ReactJS",
+          "MongoDB",
+          "MySQL",
+          "Flask",
+          "Docker",
+          "Microservices"
+        ]
       },
       {
+        "id": "video",
         "title": "Video Master AI",
         "description": "Nền tảng phân tích video AI phát hiện và lọc hoạt động của người và phương tiện. Dashboard với RESTful APIs và WebSocket để stream kết quả real-time.",
-        "technologies": ["ReactJS", "NodeJS", "WebSocket", "RESTful APIs", "Docker"]
+        "technologies": [
+          "ReactJS",
+          "NodeJS",
+          "WebSocket",
+          "RESTful APIs",
+          "Docker"
+        ]
       },
       {
+        "id": "vision",
         "title": "People & License Plate Recognition",
         "description": "Hệ thống kiểm soát ra vào dựa trên computer vision để phát hiện người và nhận dạng biển số xe. Xử lý video real-time với deep learning và OCR.",
-        "technologies": ["Python", "OpenCV", "YOLO", "OCR", "Flask", "ReactJS", "PostgreSQL", "Docker"]
+        "technologies": [
+          "Python",
+          "OpenCV",
+          "YOLO",
+          "OCR",
+          "Flask",
+          "ReactJS",
+          "PostgreSQL",
+          "Docker"
+        ]
       },
       {
+        "id": "samsung",
         "title": "Samsung Energy Simulator",
         "description": "Hệ thống quản lý năng lượng thông minh cho Samsung để ước tính tiết kiệm chi phí điện và tối ưu hóa tiêu thụ. Công cụ mô phỏng so sánh mức sử dụng năng lượng.",
-        "technologies": ["NextJS", "NestJS", "PostgreSQL", "Docker", "CI/CD"]
+        "technologies": [
+          "NextJS",
+          "NestJS",
+          "PostgreSQL",
+          "Docker",
+          "CI/CD"
+        ]
       },
       {
+        "id": "investy",
         "title": "INVESTY Platform",
         "description": "Nền tảng kết nối việc làm toàn cầu kết nối sinh viên Việt Nam với cơ hội quốc tế. Thị trường việc làm freelance và module đăng ký khóa học.",
-        "technologies": ["ReactJS", "Redux", "NodeJS", "MongoDB", "WebSocket", "Firebase", "Docker"]
+        "technologies": [
+          "ReactJS",
+          "Redux",
+          "NodeJS",
+          "MongoDB",
+          "WebSocket",
+          "Firebase",
+          "Docker"
+        ]
       },
       {
+        "id": "lynx",
         "title": "Data Extraction Tool - LYNX",
         "description": "Công cụ trích xuất và giám sát dữ liệu desktop cho thiết bị Android. Cho phép truy cập và điều khiển từ xa, trích xuất real-time camera, microphone, files, contacts và messages.",
-        "technologies": ["NodeJS", "HTML", "Electron", "Java"]
+        "technologies": [
+          "NodeJS",
+          "HTML",
+          "Electron",
+          "Java"
+        ]
       }
-    ]
+    ],
+    "eyebrow": "Dự án tiêu biểu",
+    "subtitle": "Các sản phẩm chuyên biệt và nền tảng nội bộ tôi xây dựng hoặc dẫn dắt — computer vision, AI ứng dụng và công cụ vận hành, chủ yếu cho lĩnh vực an ninh - quốc phòng.",
+    "ctaNote": "Phần lớn công việc nằm trong repository nội bộ của công ty và không thể chia sẻ công khai.",
+    "ctaButton": "Xem thêm trên GitHub"
   },
   "contact": {
     "title": "Liên hệ",
-    "subtitle": "Hãy liên hệ với tôi",
     "description": "Tôi luôn sẵn sàng thảo luận về các dự án mới, cơ hội hợp tác hoặc chỉ đơn giản là trò chuyện về công nghệ.",
     "email": "Email",
     "phone": "Điện thoại",
@@ -172,26 +261,21 @@
       "subject": "Chủ đề",
       "message": "Tin nhắn của bạn",
       "send": "Gửi tin nhắn",
-      "sending": "Đang gửi...",
-      "success": "Cảm ơn bạn đã liên hệ! Tôi sẽ phản hồi sớm nhất có thể.",
-      "error": "Có lỗi xảy ra. Vui lòng thử lại sau hoặc liên hệ trực tiếp qua email."
-    }
+      "hint": "Khi gửi, trình email của bạn sẽ mở sẵn nội dung — website không lưu trữ thông tin nào.",
+      "opened": "Trình email đã được mở với nội dung sẵn sàng để gửi."
+    },
+    "eyebrow": "Liên hệ"
   },
   "footer": {
     "copyright": "Tất cả quyền được bảo lưu.",
-    "madeWith": "Made with ❤️ by Trần Quang Đạo"
+    "backToTop": "Về đầu trang"
   },
-  "lienhe": {
-    "title": "Danh sách liên hệ",
-    "total": "Tổng số",
-    "contacts": "liên hệ",
-    "noContacts": "Chưa có liên hệ nào.",
-    "export": "Xuất file JSON",
-    "import": "Nhập file JSON",
-    "deleteConfirm": "Bạn có chắc chắn muốn xóa liên hệ này?",
-    "deleteSuccess": "Đã xóa liên hệ thành công",
-    "importSuccess": "Đã import {count} liên hệ mới!",
-    "error": "Có lỗi xảy ra"
+  "a11y": {
+    "skipToContent": "Tới nội dung chính",
+    "mainNav": "Điều hướng chính",
+    "openMenu": "Mở menu",
+    "closeMenu": "Đóng menu",
+    "changeLanguage": "Đổi ngôn ngữ",
+    "portraitAlt": "Ảnh chân dung Trần Quang Đạo"
   }
 }
-
