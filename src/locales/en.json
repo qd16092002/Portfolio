@@ -16,7 +16,7 @@
   "about": {
     "title": "About",
     "intro": "I am <strong>Trần Quang Đạo</strong>, <strong>Software Development Team Leader</strong> at <strong>AIPTGROUP VIETNAM</strong>. I build specialised software and applied-AI systems for the <strong>security and defense sector</strong> — and lead the team that delivers them.",
-    "description1": "My work covers real-time computer vision for access control and license plate recognition, AI video and audio analysis, and the internal platforms an organisation runs on: CRM, process automation, and an AI chatbot over internal documents and databases. Accuracy, latency and reproducible deployment matter more here than visual flourish.",
+    "description1": "My work covers real-time computer vision for access control and license plate recognition, video recovery and extraction from camera and NVR systems, AI video and audio analysis, and the internal platforms an organisation runs on — process automation and an AI chatbot over internal documents. Accuracy, latency and reproducible deployment matter more here than visual flourish.",
     "description2": "I work across the full stack — <strong>React</strong> and <strong>Next.js</strong>, <strong>Node.js</strong>, <strong>NestJS</strong>, <strong>Python</strong> and <strong>Flask</strong> — with <strong>OpenCV</strong>, <strong>YOLO</strong> and <strong>OCR</strong> for vision problems and <strong>Docker</strong> and <strong>CI/CD</strong> for delivery. Before AIPT I was Tech Leader at <strong>EPOSO AI</strong>, building an energy simulation platform for <strong>Samsung</strong>, and at <strong>INVESTY</strong>.",
     "education": {
       "title": "Education",
@@ -67,6 +67,7 @@
         "period": "04/2026 - Present",
         "description": [
           "Lead the software team: planning, work allocation, and on-time delivery of the company project roadmap",
+          "Lead development of the video recovery and extraction platform for camera/DVR/NVR systems",
           "Own technical direction, architecture decisions, and code review standards",
           "Drive product R&D — evaluate new technologies and turn business requirements into technical plans",
           "Mentor engineers through onboarding, code review, and regular 1-1 feedback",
@@ -83,7 +84,7 @@
           "Real-time computer vision for access control: person detection and license plate recognition (Python, OpenCV, YOLO, OCR)",
           "Video Master AI — video analysis platform streaming detection results over RESTful APIs and WebSocket",
           "ALICE — AI chatbot over internal documents and databases, built into the process management system",
-          "Internal process platform and CRM, deployed with Docker and CI/CD on a microservices architecture"
+          "Internal process platform deployed with Docker and CI/CD on a microservices architecture"
         ]
       },
       {
@@ -127,17 +128,19 @@
     "teamSize": "Team Size",
     "projects": [
       {
-        "id": "crm",
-        "title": "CRM Management System",
-        "description": "Comprehensive Customer Relationship Management (CRM) system with analytics dashboard, leads management, sales pipeline, and detailed reports. Supports real-time updates and email marketing integration.",
+        "id": "video-analyzer",
+        "title": "AIPT Video Analyzer",
+        "description": "Live view, 24-hour playback and video extraction from IP cameras and Hikvision NVR recorders. Mark-in/mark-out export to MP4, HLS streaming transcoded on the fly with FFmpeg.",
         "technologies": [
+          "Python",
+          "FastAPI",
           "React",
-          "Flask",
-          "Redux",
-          "Docker",
-          "MySQL"
-        ],
-        "teamSize": 5
+          "TypeScript",
+          "FFmpeg",
+          "HLS",
+          "RTSP",
+          "Hikvision ISAPI"
+        ]
       },
       {
         "id": "dbms",

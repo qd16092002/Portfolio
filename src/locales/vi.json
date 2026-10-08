@@ -16,7 +16,7 @@
   "about": {
     "title": "Giới thiệu",
     "intro": "Tôi là <strong>Trần Quang Đạo</strong>, <strong>Trưởng nhóm Kỹ thuật Phần mềm</strong> tại <strong>AIPTGROUP VIETNAM</strong>. Tôi xây dựng các sản phẩm phần mềm chuyên biệt và hệ thống AI ứng dụng cho lĩnh vực <strong>an ninh - quốc phòng</strong>, đồng thời dẫn dắt đội ngũ triển khai chúng.",
-    "description1": "Công việc của tôi trải từ computer vision thời gian thực cho kiểm soát ra vào và nhận dạng biển số, phân tích video và âm thanh bằng AI, đến các nền tảng vận hành nội bộ: CRM, tự động hóa quy trình và chatbot AI truy vấn tài liệu, cơ sở dữ liệu nội bộ. Ở đây độ chính xác, độ trễ và khả năng triển khai tái lập quan trọng hơn hình thức bề ngoài.",
+    "description1": "Công việc của tôi trải từ computer vision thời gian thực cho kiểm soát ra vào và nhận dạng biển số, khôi phục và trích xuất dữ liệu video từ camera và đầu ghi NVR, phân tích video và âm thanh bằng AI, đến các nền tảng vận hành nội bộ: tự động hóa quy trình và chatbot AI truy vấn tài liệu nội bộ. Ở đây độ chính xác, độ trễ và khả năng triển khai tái lập quan trọng hơn hình thức bề ngoài.",
     "description2": "Tôi làm việc xuyên suốt cả stack — <strong>React</strong>, <strong>Next.js</strong>, <strong>Node.js</strong>, <strong>NestJS</strong>, <strong>Python</strong> và <strong>Flask</strong> — cùng <strong>OpenCV</strong>, <strong>YOLO</strong>, <strong>OCR</strong> cho các bài toán thị giác và <strong>Docker</strong>, <strong>CI/CD</strong> cho khâu triển khai. Trước AIPT, tôi là Tech Leader tại <strong>EPOSO AI</strong>, xây dựng nền tảng mô phỏng năng lượng cho <strong>Samsung</strong>, và tại <strong>INVESTY</strong>.",
     "education": {
       "title": "Học vấn",
@@ -67,6 +67,7 @@
         "period": "04/2026 - Hiện tại",
         "description": [
           "Quản lý nhóm phần mềm: lập kế hoạch, phân bổ công việc, đảm bảo tiến độ các dự án công ty đề ra",
+          "Dẫn dắt phát triển nền tảng khôi phục và trích xuất dữ liệu video từ camera/DVR/NVR",
           "Chịu trách nhiệm định hướng kỹ thuật, quyết định kiến trúc và tiêu chuẩn review code",
           "Nghiên cứu phát triển sản phẩm: đánh giá công nghệ mới, chuyển yêu cầu nghiệp vụ thành phương án kỹ thuật",
           "Đào tạo và phát triển thành viên qua onboarding, review code và phản hồi 1-1 định kỳ",
@@ -83,7 +84,7 @@
           "Computer vision thời gian thực cho kiểm soát ra vào: phát hiện người và nhận dạng biển số (Python, OpenCV, YOLO, OCR)",
           "Video Master AI — nền tảng phân tích video, truyền kết quả nhận dạng qua RESTful API và WebSocket",
           "ALICE — chatbot AI truy vấn tài liệu và cơ sở dữ liệu nội bộ, tích hợp vào hệ thống quản lý quy trình",
-          "Nền tảng quản lý quy trình nội bộ và CRM, triển khai bằng Docker và CI/CD trên kiến trúc microservices"
+          "Nền tảng quản lý quy trình nội bộ, triển khai bằng Docker và CI/CD trên kiến trúc microservices"
         ]
       },
       {
@@ -127,17 +128,19 @@
     "teamSize": "Quy mô team",
     "projects": [
       {
-        "id": "crm",
-        "title": "CRM Management System",
-        "description": "Hệ thống quản lý quan hệ khách hàng (CRM) toàn diện với dashboard analytics, quản lý leads, sales pipeline, và báo cáo chi tiết. Hỗ trợ real-time updates và tích hợp email marketing.",
+        "id": "video-analyzer",
+        "title": "AIPT Video Analyzer",
+        "description": "Xem trực tiếp, phát lại 24 giờ và trích xuất video từ camera IP và đầu ghi NVR Hikvision. Cắt đoạn mark-in/mark-out xuất MP4, truyền HLS chuyển mã trực tiếp bằng FFmpeg.",
         "technologies": [
+          "Python",
+          "FastAPI",
           "React",
-          "Flask",
-          "Redux",
-          "Docker",
-          "MySQL"
-        ],
-        "teamSize": 5
+          "TypeScript",
+          "FFmpeg",
+          "HLS",
+          "RTSP",
+          "Hikvision ISAPI"
+        ]
       },
       {
         "id": "dbms",
