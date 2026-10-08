@@ -27,6 +27,12 @@ jobs:
           node-version: 20
           cache: npm
 
+      # Node 20 ships npm 10, which resolves optional peer dependencies
+      # differently from the npm that generates package-lock.json locally.
+      # Pinning keeps npm ci from rejecting a lockfile that is actually valid.
+      - name: Pin npm
+        run: npm install -g npm@11
+
       - name: Install dependencies
         run: npm ci
 
