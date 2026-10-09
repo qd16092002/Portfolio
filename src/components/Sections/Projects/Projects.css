@@ -4,11 +4,18 @@
   gap: var(--space-5);
 }
 
+.project-item {
+  display: flex;
+}
+
+/* The whole card is a single link to the project's detail page. */
 .project {
   display: flex;
   flex-direction: column;
+  width: 100%;
   overflow: hidden;
   background: var(--bg);
+  color: inherit;
 }
 
 .project:hover {
@@ -51,6 +58,11 @@
   font-size: var(--fs-h3);
   font-weight: 600;
   color: var(--ink);
+  transition: color var(--dur-fast) var(--ease);
+}
+
+.project:hover .project__title {
+  color: var(--accent);
 }
 
 .project__description {
@@ -71,13 +83,24 @@
   gap: var(--space-2);
 }
 
-.project__team {
-  display: flex;
+.project__more {
+  display: inline-flex;
   align-items: center;
   gap: var(--space-2);
-  margin-top: var(--space-3);
+  margin-top: var(--space-4);
   font-size: var(--fs-xs);
-  color: var(--ink-3);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: var(--accent);
+}
+
+.project__more svg {
+  font-size: 0.75rem;
+  transition: transform var(--dur-fast) var(--ease);
+}
+
+.project:hover .project__more svg {
+  transform: translateX(3px);
 }
 
 /* Section CTA -------------------------------------------------------------- */

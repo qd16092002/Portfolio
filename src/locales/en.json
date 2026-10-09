@@ -130,7 +130,7 @@
       {
         "id": "video-analyzer",
         "title": "AIPT Video Analyzer",
-        "description": "Live view, 24-hour playback and video extraction from IP cameras and Hikvision NVR recorders. Mark-in/mark-out export to MP4, HLS streaming transcoded on the fly with FFmpeg.",
+        "description": "Forensic tool that recovers and extracts video from camera/DVR/NVR drives in proprietary formats Windows cannot read, including deleted footage.",
         "technologies": [
           "Python",
           "FastAPI",
@@ -140,24 +140,56 @@
           "HLS",
           "RTSP",
           "Hikvision ISAPI"
-        ]
+        ],
+        "detail": {
+          "context": "AIPTGROUP VIETNAM · 2026",
+          "role": "Team Leader · Full-stack",
+          "tagline": "Recovers and extracts video from camera/DVR/NVR drives in formats Windows cannot read — including deleted footage.",
+          "overview": [
+            "A forensic tool for recovering video evidence from surveillance storage. DVR and NVR systems write recordings to disk in proprietary on-disk formats that Windows does not recognise; this reads those formats directly from the drive and extracts the footage into standard, playable files.",
+            "Beyond what the recorder still lists, it reconstructs recordings that have been deleted or overwritten, working across different hard-drive and filesystem types. Recovered streams are transcoded with FFmpeg so they play in any browser, and the platform also connects to live camera and NVR feeds for review."
+          ],
+          "highlights": [
+            "Reads proprietary DVR/NVR on-disk formats that Windows cannot mount, straight from the drive",
+            "Recovers deleted and overwritten footage, not only what the recorder still lists",
+            "Works across different hard-drive and filesystem types",
+            "Extracts recovered video to standard MP4, transcoded on the fly with FFmpeg",
+            "Live view and 24-hour playback for camera and NVR feeds"
+          ]
+        }
       },
       {
         "id": "dbms",
         "title": "AIPT Internal Process Web",
-        "description": "Web-based internal process management system to digitize and automate company processes. Improved operational efficiency by optimizing administrative processes.",
+        "description": "The modular web platform that runs AIPT’s operations — HRM and user management, tasks, inventory, projects and recruitment in one system.",
         "technologies": [
           "ReactJS",
           "Flask",
           "MySQL",
           "Docker",
           "CI/CD"
-        ]
+        ],
+        "detail": {
+          "context": "AIPTGROUP VIETNAM · 2025",
+          "role": "Full-stack Developer",
+          "tagline": "The web platform that runs AIPT’s operations — HRM, tasks, inventory, projects and recruitment in one modular system.",
+          "overview": [
+            "A modular internal platform that runs the company’s day-to-day operations in one place. Each area of the business is its own module — HRM and user management, task and work tracking, inventory and warehouse, project management, recruitment and more — all sharing a single account and permission system.",
+            "It replaced scattered spreadsheets and ad-hoc tools with one web app, built with a React front end over a Flask API and MySQL, and shipped through Docker and CI/CD. It also acts as the host system that other internal tools, such as the ALICE chatbot, plug into."
+          ],
+          "highlights": [
+            "Modular by design: HRM and user management, tasks, inventory, projects, recruitment",
+            "One shared account and role-based permission system across every module",
+            "Replaced scattered spreadsheets with a single operations platform",
+            "React + Flask + MySQL, containerised and deployed via CI/CD",
+            "Hosts other internal tools, including the ALICE chatbot"
+          ]
+        }
       },
       {
         "id": "alice",
         "title": "Chatbot AI - ALICE",
-        "description": "AI chatbot integrated with internal process management system. Supports natural language interaction for QA, internal document search, and database access.",
+        "description": "An AI assistant that lets staff query the AIPT internal platform in natural language and get the data back, without navigating modules or writing queries.",
         "technologies": [
           "ReactJS",
           "Flask",
@@ -165,12 +197,28 @@
           "Docker",
           "CI/CD",
           "Microservices"
-        ]
+        ],
+        "detail": {
+          "context": "AIPTGROUP VIETNAM · 2025",
+          "role": "Full-stack Developer",
+          "tagline": "Ask the AIPT platform questions in plain language and get the data back.",
+          "overview": [
+            "ALICE lets staff query the AIPT internal platform in natural language. Instead of navigating modules or writing queries, they ask a question — about people, tasks, inventory or projects — and ALICE pulls the answer straight from the platform’s data.",
+            "It is built into the internal process web it draws from, running as a separate service in a microservices setup so the AI layer can scale and deploy independently of the main application."
+          ],
+          "highlights": [
+            "Natural-language access to the data held in the AIPT internal platform",
+            "Answers questions across modules without navigating the UI or writing queries",
+            "Embedded into the internal process web it draws its data from",
+            "Separate microservice — the AI layer scales and deploys on its own",
+            "React + Flask + MySQL, containerised with CI/CD"
+          ]
+        }
       },
       {
         "id": "voice",
         "title": "AI-Assisted Meeting Management",
-        "description": "AI platform to improve meeting audio quality with noise reduction, echo cancellation, and volume normalization. Processes audio and converts to text.",
+        "description": "A meeting-intelligence platform: multi-language transcription, live analysis, file conversion, summaries and reports, with audio enhancement before processing.",
         "technologies": [
           "NodeJS",
           "ReactJS",
@@ -179,24 +227,56 @@
           "Flask",
           "Docker",
           "Microservices"
-        ]
+        ],
+        "detail": {
+          "context": "AIPTGROUP VIETNAM · 2025",
+          "role": "Full-stack Developer",
+          "tagline": "Transcribes meetings in multiple languages, then summarises, reports and analyses — live or from files.",
+          "overview": [
+            "A meeting-intelligence platform that turns speech into text across multiple languages. It works live during a meeting or on uploaded recordings, and before transcribing it cleans the audio — noise reduction, echo cancellation and volume normalisation — so the transcript is accurate.",
+            "On top of transcription it analyses the conversation in real time, converts between file formats, and generates summaries and written reports. The audio models run on PyTorch behind a Flask + SocketIO backend, streaming results to the client as they are produced."
+          ],
+          "highlights": [
+            "Multi-language speech-to-text, live or from uploaded files",
+            "Audio enhancement (noise, echo, volume) before transcription for accuracy",
+            "Real-time analysis, file-format conversion, summaries and auto-written reports",
+            "Streams results as they are produced over WebSocket (Flask-SocketIO)",
+            "PyTorch audio models, MySQL / MongoDB storage, containerised"
+          ]
+        }
       },
       {
         "id": "video",
         "title": "Video Master AI",
-        "description": "AI video analysis platform detecting and filtering human and vehicle activities. Dashboard with RESTful APIs and WebSocket for real-time result streaming.",
+        "description": "An AI platform that analyses live and recorded video at scale — detecting and filtering people, faces and vehicles — with dashboards, maps and reports.",
         "technologies": [
           "ReactJS",
           "NodeJS",
           "WebSocket",
           "RESTful APIs",
           "Docker"
-        ]
+        ],
+        "detail": {
+          "context": "AIPTGROUP VIETNAM · 2025",
+          "role": "Full-stack Developer",
+          "tagline": "Analyses live and recorded video to detect people, faces and vehicles, with dashboards and reports.",
+          "overview": [
+            "An AI platform for analysing surveillance and recorded video at scale. It detects and filters activity — people, faces and vehicles — across live feeds and stored footage, so operators can jump to the moments that matter instead of scrubbing through hours of video.",
+            "Results surface on a dashboard with maps and generated reports, streamed in real time over RESTful APIs and WebSocket. Detection runs on PyTorch models with PaddleOCR for text, FFmpeg handles the video pipeline, and the whole system runs either as a web app or a packaged desktop window."
+          ],
+          "highlights": [
+            "Detects and filters people, faces and vehicles across live and recorded video",
+            "Lets operators jump to events instead of scrubbing hours of footage",
+            "Dashboard with maps and auto-generated reports",
+            "Real-time result streaming over RESTful APIs and WebSocket",
+            "PyTorch + PaddleOCR detection, FFmpeg pipeline; runs as web app or desktop"
+          ]
+        }
       },
       {
         "id": "vision",
         "title": "People & License Plate Recognition",
-        "description": "Access control system based on computer vision to detect people and recognize license plates. Real-time video processing with deep learning and OCR.",
+        "description": "A computer-vision access-control system that detects people and reads vehicle license plates from camera feeds in real time, turning video into entry/exit data.",
         "technologies": [
           "Python",
           "OpenCV",
@@ -206,24 +286,56 @@
           "ReactJS",
           "PostgreSQL",
           "Docker"
-        ]
+        ],
+        "detail": {
+          "context": "AIPTGROUP VIETNAM · 2025",
+          "role": "Full-stack Developer",
+          "tagline": "Computer-vision access control that detects people and reads license plates in real time.",
+          "overview": [
+            "A computer-vision access-control system that watches camera feeds and identifies, in real time, the people and vehicles passing through. It detects people and reads vehicle license plates as they arrive, turning a raw video stream into structured entry and exit records.",
+            "Detection runs as a two-stage pipeline — a YOLO model locates people and plates, then an OCR stage reads the plate text — served from a Flask API with a React dashboard and PostgreSQL, all containerised with Docker. It was built for deployment in the security and defense sector, where accuracy and latency decide whether the system is usable at all."
+          ],
+          "highlights": [
+            "Real-time person detection and license-plate recognition from camera streams",
+            "Two-stage pipeline: YOLO detection feeding an OCR stage for plate text",
+            "Turns a raw video stream into structured entry/exit records",
+            "Flask + React + PostgreSQL, containerised with Docker",
+            "Built for the security and defense sector"
+          ]
+        }
       },
       {
         "id": "samsung",
         "title": "Samsung Energy Simulator",
-        "description": "Smart energy management system for Samsung to estimate electricity cost savings and optimize consumption. Simulation tool comparing energy usage levels.",
+        "description": "A smart energy-management platform built for Samsung, with a simulator that models usage scenarios and projects electricity cost savings per market.",
         "technologies": [
           "NextJS",
           "NestJS",
           "PostgreSQL",
           "Docker",
           "CI/CD"
-        ]
+        ],
+        "detail": {
+          "context": "EPOSO AI · 2024",
+          "role": "Tech Leader",
+          "tagline": "Simulates electricity cost savings across usage scenarios to guide energy decisions.",
+          "overview": [
+            "A smart energy-management platform built for Samsung to help customers understand and cut their electricity costs. At its heart is a simulator that models different usage scenarios side by side and projects the savings from each, so decisions rest on real numbers rather than guesswork.",
+            "To make those numbers meaningful in each market, it carries localised electricity-pricing models for Vietnam, India and Thailand. Built on Next.js and NestJS over PostgreSQL and shipped with Docker and CI/CD — delivered as Tech Leader for an external client."
+          ],
+          "highlights": [
+            "Simulator comparing energy-usage scenarios and projecting the savings of each",
+            "Localised electricity-pricing models for Vietnam, India and Thailand",
+            "Helps customers estimate cost savings and optimise consumption",
+            "Next.js + NestJS + PostgreSQL, containerised with CI/CD",
+            "Delivered as Tech Leader for an external client (Samsung)"
+          ]
+        }
       },
       {
         "id": "investy",
         "title": "INVESTY Platform",
-        "description": "Global job connection platform connecting Vietnamese students with international opportunities. Freelance job marketplace and course registration module.",
+        "description": "A platform connecting Vietnamese students and talent with opportunities abroad — a global job board, a freelance marketplace and course registration for Korean universities.",
         "technologies": [
           "ReactJS",
           "Redux",
@@ -232,24 +344,57 @@
           "WebSocket",
           "Firebase",
           "Docker"
-        ]
+        ],
+        "detail": {
+          "context": "INVESTY · 2023",
+          "role": "Tech Leader",
+          "tagline": "Connects Vietnamese students and talent with global opportunities.",
+          "overview": [
+            "A platform connecting Vietnamese students and talent with opportunities abroad. It brings together a global job board, a freelance marketplace for project-based hiring, and a course-registration module for Korean universities — three ways for users to find work or study internationally, in one place.",
+            "The real-time features — messaging and live updates — run over WebSocket with Firebase, on a React / Redux front end and a Node.js + MongoDB backend. Delivered as Tech Leader, owning the architecture across all three products."
+          ],
+          "highlights": [
+            "Global job-connection platform linking Vietnamese talent with opportunities abroad",
+            "Freelance marketplace for project-based hiring",
+            "Course-registration module for Korean universities",
+            "Real-time messaging and live updates over WebSocket + Firebase",
+            "React / Redux front end, Node.js + MongoDB backend"
+          ]
+        }
       },
       {
         "id": "lynx",
         "title": "Data Extraction Tool - LYNX",
-        "description": "Desktop data extraction and monitoring tool for Android devices. Enables remote access and control, real-time extraction of camera, microphone, files, contacts, and messages.",
+        "description": "A desktop console for administering a fleet of enrolled Android devices — inventory, status and remote administration from one dashboard.",
         "technologies": [
           "NodeJS",
           "HTML",
           "Electron",
           "Java"
-        ]
+        ],
+        "detail": {
+          "context": "AIPTGROUP VIETNAM · 2025",
+          "role": "Full-stack Developer",
+          "tagline": "A desktop console for managing a fleet of enrolled Android devices from one place.",
+          "overview": [
+            "LYNX is a desktop console for administering a fleet of enrolled Android devices from one place. It gives an operator a single dashboard over every device — inventory, live status and remote administration for an authorised fleet — rather than managing each handset by hand.",
+            "On each device a Java agent reports in to a central Node.js server, and operators work through an Electron desktop client. It was built for deployment in the security and defense sector."
+          ],
+          "highlights": [
+            "Single console for an enrolled Android device fleet",
+            "Device inventory, live status and remote administration",
+            "Per-device Java agent reporting to a central Node.js server",
+            "Electron desktop client for operators",
+            "Built for the security and defense sector"
+          ]
+        }
       }
     ],
     "eyebrow": "Selected work",
     "subtitle": "Specialised products and internal platforms I built or led — computer vision, applied AI, and operations tooling, largely for the security and defense sector.",
     "ctaNote": "Much of this work lives in private company repositories and cannot be shared publicly.",
-    "ctaButton": "See more on GitHub"
+    "ctaButton": "See more on GitHub",
+    "viewDetails": "View details"
   },
   "contact": {
     "title": "Contact",
@@ -280,5 +425,18 @@
     "closeMenu": "Close menu",
     "changeLanguage": "Change language",
     "portraitAlt": "Portrait of Trần Quang Đạo"
+  },
+  "projectDetail": {
+    "back": "All projects",
+    "overview": "Overview",
+    "highlights": "Highlights",
+    "role": "Role",
+    "context": "Context",
+    "stack": "Tech stack",
+    "next": "Next project",
+    "prev": "Previous project",
+    "notFoundTitle": "Project not found",
+    "notFoundBody": "This project does not exist. It may have been renamed or removed.",
+    "privateNote": "This project lives in a private company repository and cannot be shared publicly."
   }
 }

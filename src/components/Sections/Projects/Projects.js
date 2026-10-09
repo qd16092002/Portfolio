@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaGithub, FaUsers, FaArrowRight } from 'react-icons/fa';
+import { FaGithub, FaArrowRight } from 'react-icons/fa';
 import { useLanguage } from '../../../context/LanguageContext';
 import SectionHeader from '../../common/SectionHeader';
 import Reveal from '../../common/Reveal';
@@ -7,7 +7,7 @@ import { PROFILE } from '../../../data/profile';
 import { asset } from '../../../lib/asset';
 import './Projects.css';
 
-const MAX_VISIBLE_TAGS = 5;
+const MAX_VISIBLE_TAGS = 4;
 
 const Projects = () => {
   const { t } = useLanguage();
@@ -36,45 +36,47 @@ const Projects = () => {
             return (
               <Reveal
                 as="li"
-                className="card project"
+                className="project-item"
                 key={project.id}
                 delay={(index % 3) * 70}
               >
-                <div className="project__media">
-                  <img
-                    src={asset(`/projects/${project.id}.webp`)}
-                    alt={project.title}
-                    width="1200"
-                    height="750"
-                    loading={index < 3 ? 'eager' : 'lazy'}
-                    decoding="async"
-                  />
-                </div>
-
-                <div className="project__body">
-                  <h3 className="project__title">{project.title}</h3>
-                  <p className="project__description">{project.description}</p>
-
-                  <div className="project__footer">
-                    <ul className="project__tags">
-                      {visibleTags.map((tech) => (
-                        <li className="tag" key={tech}>
-                          {tech}
-                        </li>
-                      ))}
-                      {hiddenCount > 0 && (
-                        <li className="tag">+{hiddenCount}</li>
-                      )}
-                    </ul>
-
-                    {project.teamSize && (
-                      <p className="project__team">
-                        <FaUsers aria-hidden="true" />
-                        {t('projects.teamSize')}: {project.teamSize}
-                      </p>
-                    )}
+                <a className="card project" href={`#/project/${project.id}`}>
+                  <div className="project__media">
+                    <img
+                      src={asset(`/projects/${project.id}.webp`)}
+                      alt={project.title}
+                      width="1200"
+                      height="750"
+                      loading={index < 3 ? 'eager' : 'lazy'}
+                      decoding="async"
+                    />
                   </div>
-                </div>
+
+                  <div className="project__body">
+                    <h3 className="project__title">{project.title}</h3>
+                    <p className="project__description">
+                      {project.detail?.tagline || project.description}
+                    </p>
+
+                    <div className="project__footer">
+                      <ul className="project__tags">
+                        {visibleTags.map((tech) => (
+                          <li className="tag" key={tech}>
+                            {tech}
+                          </li>
+                        ))}
+                        {hiddenCount > 0 && (
+                          <li className="tag">+{hiddenCount}</li>
+                        )}
+                      </ul>
+
+                      <span className="project__more">
+                        {t('projects.viewDetails')}
+                        <FaArrowRight aria-hidden="true" />
+                      </span>
+                    </div>
+                  </div>
+                </a>
               </Reveal>
             );
           })}

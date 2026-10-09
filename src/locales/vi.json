@@ -130,7 +130,7 @@
       {
         "id": "video-analyzer",
         "title": "AIPT Video Analyzer",
-        "description": "Xem trực tiếp, phát lại 24 giờ và trích xuất video từ camera IP và đầu ghi NVR Hikvision. Cắt đoạn mark-in/mark-out xuất MP4, truyền HLS chuyển mã trực tiếp bằng FFmpeg.",
+        "description": "Công cụ forensic khôi phục và trích xuất video từ ổ cứng camera/DVR/NVR ở các định dạng gốc mà Windows không đọc được, gồm cả dữ liệu đã bị xóa.",
         "technologies": [
           "Python",
           "FastAPI",
@@ -140,24 +140,56 @@
           "HLS",
           "RTSP",
           "Hikvision ISAPI"
-        ]
+        ],
+        "detail": {
+          "context": "AIPTGROUP VIETNAM · 2026",
+          "role": "Trưởng nhóm · Full-stack",
+          "tagline": "Khôi phục và trích xuất video từ ổ cứng camera/DVR/NVR ở định dạng Windows không đọc được — gồm cả dữ liệu đã bị xóa.",
+          "overview": [
+            "Công cụ forensic phục hồi dữ liệu video từ các hệ thống lưu trữ giám sát. Đầu ghi DVR và NVR ghi dữ liệu xuống ổ cứng ở các định dạng gốc độc quyền mà Windows không nhận diện được; phần mềm đọc trực tiếp các định dạng đó từ ổ cứng và trích xuất video ra file chuẩn, phát được.",
+            "Ngoài phần đầu ghi còn liệt kê, công cụ còn phục hồi các bản ghi đã bị xóa hoặc ghi đè, hoạt động trên nhiều loại ổ cứng và hệ thống tập tin khác nhau. Dữ liệu khôi phục được chuyển mã bằng FFmpeg để phát trên mọi trình duyệt, và nền tảng cũng kết nối trực tiếp tới camera, đầu ghi NVR để xem lại."
+          ],
+          "highlights": [
+            "Đọc các định dạng gốc độc quyền của DVR/NVR mà Windows không mount được, trực tiếp từ ổ cứng",
+            "Phục hồi dữ liệu đã bị xóa và ghi đè, không chỉ phần đầu ghi còn liệt kê",
+            "Hoạt động trên nhiều loại ổ cứng và hệ thống tập tin",
+            "Trích xuất video khôi phục ra MP4 chuẩn, chuyển mã trực tiếp bằng FFmpeg",
+            "Xem trực tiếp và phát lại 24 giờ cho camera và đầu ghi NVR"
+          ]
+        }
       },
       {
         "id": "dbms",
         "title": "AIPT Internal Process Web",
-        "description": "Hệ thống quản lý quy trình nội bộ web-based để số hóa và tự động hóa các quy trình công ty. Nâng cao hiệu quả hoạt động bằng cách tối ưu hóa các quy trình hành chính.",
+        "description": "Nền tảng web module hóa vận hành toàn bộ công ty AIPT — HRM và quản lý người dùng, công việc, kho, dự án và tuyển dụng trong một hệ thống.",
         "technologies": [
           "ReactJS",
           "Flask",
           "MySQL",
           "Docker",
           "CI/CD"
-        ]
+        ],
+        "detail": {
+          "context": "AIPTGROUP VIETNAM · 2025",
+          "role": "Full-stack Developer",
+          "tagline": "Nền tảng web vận hành công ty AIPT — HRM, công việc, kho, dự án và tuyển dụng trong một hệ thống module hóa.",
+          "overview": [
+            "Nền tảng nội bộ module hóa vận hành công việc hằng ngày của công ty trong một nơi. Mỗi mảng nghiệp vụ là một module riêng — HRM và quản lý người dùng, quản lý công việc, kho, quản lý dự án, tuyển dụng và nhiều hơn nữa — cùng dùng chung một hệ thống tài khoản và phân quyền.",
+            "Hệ thống thay thế các bảng tính rời rạc và công cụ chắp vá bằng một ứng dụng web duy nhất, với giao diện React trên API Flask và MySQL, triển khai qua Docker và CI/CD. Đây cũng là hệ thống chủ để các công cụ nội bộ khác, như chatbot ALICE, tích hợp vào."
+          ],
+          "highlights": [
+            "Thiết kế module: HRM và quản lý người dùng, công việc, kho, dự án, tuyển dụng",
+            "Dùng chung một hệ thống tài khoản và phân quyền theo vai trò cho mọi module",
+            "Thay thế các bảng tính rời rạc bằng một nền tảng vận hành duy nhất",
+            "React + Flask + MySQL, đóng gói container và triển khai qua CI/CD",
+            "Là hệ thống chủ cho các công cụ nội bộ khác, gồm chatbot ALICE"
+          ]
+        }
       },
       {
         "id": "alice",
         "title": "Chatbot AI - ALICE",
-        "description": "Chatbot AI được tích hợp với hệ thống quản lý quy trình nội bộ. Hỗ trợ tương tác ngôn ngữ tự nhiên cho QA, tìm kiếm tài liệu nội bộ và truy cập database.",
+        "description": "Trợ lý AI cho phép nhân viên truy vấn nền tảng nội bộ AIPT bằng ngôn ngữ tự nhiên và lấy dữ liệu, không cần duyệt module hay viết truy vấn.",
         "technologies": [
           "ReactJS",
           "Flask",
@@ -165,12 +197,28 @@
           "Docker",
           "CI/CD",
           "Microservices"
-        ]
+        ],
+        "detail": {
+          "context": "AIPTGROUP VIETNAM · 2025",
+          "role": "Full-stack Developer",
+          "tagline": "Hỏi nền tảng AIPT bằng ngôn ngữ tự nhiên và nhận lại dữ liệu.",
+          "overview": [
+            "ALICE cho phép nhân viên truy vấn nền tảng nội bộ AIPT bằng ngôn ngữ tự nhiên. Thay vì phải duyệt qua các module hay viết truy vấn, họ chỉ cần đặt câu hỏi — về nhân sự, công việc, kho hay dự án — và ALICE lấy câu trả lời trực tiếp từ dữ liệu của nền tảng.",
+            "Chatbot được nhúng vào chính nền tảng quy trình nội bộ mà nó truy vấn, chạy như một service riêng trong kiến trúc microservices để lớp AI có thể mở rộng và triển khai độc lập với ứng dụng chính."
+          ],
+          "highlights": [
+            "Truy cập dữ liệu trong nền tảng nội bộ AIPT bằng ngôn ngữ tự nhiên",
+            "Trả lời câu hỏi xuyên suốt các module mà không cần thao tác giao diện hay viết truy vấn",
+            "Nhúng vào chính nền tảng quy trình nội bộ mà nó lấy dữ liệu",
+            "Microservice riêng — lớp AI mở rộng và triển khai độc lập",
+            "React + Flask + MySQL, đóng gói container với CI/CD"
+          ]
+        }
       },
       {
         "id": "voice",
         "title": "AI-Assisted Meeting Management",
-        "description": "Nền tảng AI hỗ trợ cải thiện chất lượng âm thanh cuộc họp với noise reduction, echo cancellation và volume normalization. Xử lý audio và chuyển đổi sang text.",
+        "description": "Nền tảng phân tích cuộc họp: chuyển văn bản đa ngôn ngữ, phân tích trực tiếp, chuyển đổi file, tóm tắt và viết báo cáo, nâng cao chất lượng âm thanh trước khi xử lý.",
         "technologies": [
           "NodeJS",
           "ReactJS",
@@ -179,24 +227,56 @@
           "Flask",
           "Docker",
           "Microservices"
-        ]
+        ],
+        "detail": {
+          "context": "AIPTGROUP VIETNAM · 2025",
+          "role": "Full-stack Developer",
+          "tagline": "Chuyển giọng nói thành văn bản đa ngôn ngữ, rồi tóm tắt, viết báo cáo và phân tích — trực tiếp hoặc từ file.",
+          "overview": [
+            "Nền tảng phân tích cuộc họp chuyển giọng nói thành văn bản ở nhiều ngôn ngữ. Hệ thống hoạt động trực tiếp trong cuộc họp hoặc trên file ghi âm tải lên, và trước khi chuyển đổi, nó làm sạch âm thanh — giảm ồn, khử tiếng vang và chuẩn hóa âm lượng — để văn bản chính xác.",
+            "Trên nền chuyển đổi đó, hệ thống phân tích nội dung trực tiếp, chuyển đổi giữa các định dạng file, và tự sinh bản tóm tắt cùng báo cáo. Các mô hình âm thanh chạy trên PyTorch sau backend Flask + SocketIO, truyền kết quả về client ngay khi được tạo ra."
+          ],
+          "highlights": [
+            "Chuyển giọng nói thành văn bản đa ngôn ngữ, trực tiếp hoặc từ file tải lên",
+            "Nâng cao chất lượng âm thanh (ồn, vang, âm lượng) trước khi chuyển đổi để tăng độ chính xác",
+            "Phân tích trực tiếp, chuyển đổi định dạng file, tóm tắt và tự viết báo cáo",
+            "Truyền kết quả ngay khi tạo ra qua WebSocket (Flask-SocketIO)",
+            "Mô hình âm thanh PyTorch, lưu trữ MySQL / MongoDB, đóng gói container"
+          ]
+        }
       },
       {
         "id": "video",
         "title": "Video Master AI",
-        "description": "Nền tảng phân tích video AI phát hiện và lọc hoạt động của người và phương tiện. Dashboard với RESTful APIs và WebSocket để stream kết quả real-time.",
+        "description": "Nền tảng AI phân tích video trực tiếp và ghi sẵn ở quy mô lớn — phát hiện và lọc người, khuôn mặt, phương tiện — kèm dashboard, bản đồ và báo cáo.",
         "technologies": [
           "ReactJS",
           "NodeJS",
           "WebSocket",
           "RESTful APIs",
           "Docker"
-        ]
+        ],
+        "detail": {
+          "context": "AIPTGROUP VIETNAM · 2025",
+          "role": "Full-stack Developer",
+          "tagline": "Phân tích video trực tiếp và ghi sẵn để nhận diện người, khuôn mặt và phương tiện, kèm dashboard và báo cáo.",
+          "overview": [
+            "Nền tảng AI phân tích video giám sát và video ghi sẵn ở quy mô lớn. Hệ thống phát hiện và lọc hoạt động — người, khuôn mặt và phương tiện — trên cả luồng trực tiếp lẫn video đã lưu, giúp người vận hành nhảy ngay tới các thời điểm quan trọng thay vì phải tua qua hàng giờ video.",
+            "Kết quả hiển thị trên dashboard với bản đồ và báo cáo tự sinh, truyền trực tiếp qua RESTful API và WebSocket. Nhận diện chạy trên mô hình PyTorch với PaddleOCR cho phần chữ, FFmpeg xử lý luồng video, và toàn bộ hệ thống chạy được dạng web hoặc cửa sổ desktop."
+          ],
+          "highlights": [
+            "Phát hiện và lọc người, khuôn mặt và phương tiện trên video trực tiếp và ghi sẵn",
+            "Cho người vận hành nhảy tới sự kiện thay vì tua qua hàng giờ video",
+            "Dashboard với bản đồ và báo cáo tự sinh",
+            "Truyền kết quả trực tiếp qua RESTful API và WebSocket",
+            "Nhận diện PyTorch + PaddleOCR, pipeline FFmpeg; chạy web hoặc desktop"
+          ]
+        }
       },
       {
         "id": "vision",
         "title": "People & License Plate Recognition",
-        "description": "Hệ thống kiểm soát ra vào dựa trên computer vision để phát hiện người và nhận dạng biển số xe. Xử lý video real-time với deep learning và OCR.",
+        "description": "Hệ thống kiểm soát ra vào bằng computer vision, phát hiện người và đọc biển số xe từ luồng camera theo thời gian thực, biến video thành dữ liệu ra/vào.",
         "technologies": [
           "Python",
           "OpenCV",
@@ -206,24 +286,56 @@
           "ReactJS",
           "PostgreSQL",
           "Docker"
-        ]
+        ],
+        "detail": {
+          "context": "AIPTGROUP VIETNAM · 2025",
+          "role": "Full-stack Developer",
+          "tagline": "Kiểm soát ra vào bằng computer vision, phát hiện người và đọc biển số theo thời gian thực.",
+          "overview": [
+            "Hệ thống kiểm soát ra vào bằng computer vision, quan sát luồng camera và nhận diện theo thời gian thực những người và phương tiện đi qua. Hệ thống phát hiện người và đọc biển số xe ngay khi xuất hiện, biến luồng video thô thành dữ liệu ra/vào có cấu trúc.",
+            "Nhận diện chạy theo pipeline hai tầng — mô hình YOLO định vị người và biển số, sau đó tầng OCR đọc nội dung biển số — phục vụ qua API Flask với dashboard React và PostgreSQL, tất cả đóng gói container bằng Docker. Hệ thống được xây dựng để triển khai trong lĩnh vực an ninh - quốc phòng, nơi độ chính xác và độ trễ quyết định hệ thống có dùng được hay không."
+          ],
+          "highlights": [
+            "Phát hiện người và nhận dạng biển số thời gian thực từ luồng camera",
+            "Pipeline hai tầng: YOLO phát hiện rồi đưa sang tầng OCR đọc biển số",
+            "Biến luồng video thô thành dữ liệu ra/vào có cấu trúc",
+            "Flask + React + PostgreSQL, đóng gói container bằng Docker",
+            "Xây dựng cho lĩnh vực an ninh - quốc phòng"
+          ]
+        }
       },
       {
         "id": "samsung",
         "title": "Samsung Energy Simulator",
-        "description": "Hệ thống quản lý năng lượng thông minh cho Samsung để ước tính tiết kiệm chi phí điện và tối ưu hóa tiêu thụ. Công cụ mô phỏng so sánh mức sử dụng năng lượng.",
+        "description": "Nền tảng quản lý năng lượng thông minh xây dựng cho Samsung, với bộ mô phỏng các kịch bản sử dụng và ước tính chi phí tiết kiệm điện theo từng thị trường.",
         "technologies": [
           "NextJS",
           "NestJS",
           "PostgreSQL",
           "Docker",
           "CI/CD"
-        ]
+        ],
+        "detail": {
+          "context": "EPOSO AI · 2024",
+          "role": "Tech Leader",
+          "tagline": "Mô phỏng chi phí tiết kiệm điện qua các kịch bản sử dụng để hỗ trợ quyết định năng lượng.",
+          "overview": [
+            "Nền tảng quản lý năng lượng thông minh xây dựng cho Samsung, giúp khách hàng hiểu và cắt giảm chi phí điện. Trung tâm là bộ mô phỏng dựng các kịch bản sử dụng song song và ước tính mức tiết kiệm của từng kịch bản, để quyết định dựa trên con số thực thay vì phỏng đoán.",
+            "Để các con số có ý nghĩa với từng thị trường, hệ thống mang các mô hình giá điện riêng cho Việt Nam, Ấn Độ và Thái Lan. Xây dựng trên Next.js và NestJS với PostgreSQL, triển khai bằng Docker và CI/CD — thực hiện với vai trò Tech Leader cho khách hàng bên ngoài."
+          ],
+          "highlights": [
+            "Bộ mô phỏng so sánh các kịch bản sử dụng năng lượng và ước tính mức tiết kiệm của từng kịch bản",
+            "Mô hình giá điện riêng cho Việt Nam, Ấn Độ và Thái Lan",
+            "Giúp khách hàng ước tính chi phí tiết kiệm và tối ưu tiêu thụ",
+            "Next.js + NestJS + PostgreSQL, đóng gói container với CI/CD",
+            "Thực hiện với vai trò Tech Leader cho khách hàng bên ngoài (Samsung)"
+          ]
+        }
       },
       {
         "id": "investy",
         "title": "INVESTY Platform",
-        "description": "Nền tảng kết nối việc làm toàn cầu kết nối sinh viên Việt Nam với cơ hội quốc tế. Thị trường việc làm freelance và module đăng ký khóa học.",
+        "description": "Nền tảng kết nối sinh viên và nhân lực Việt Nam với cơ hội quốc tế — sàn việc làm toàn cầu, sàn freelance và đăng ký khóa học cho các trường đại học Hàn Quốc.",
         "technologies": [
           "ReactJS",
           "Redux",
@@ -232,24 +344,57 @@
           "WebSocket",
           "Firebase",
           "Docker"
-        ]
+        ],
+        "detail": {
+          "context": "INVESTY · 2023",
+          "role": "Tech Leader",
+          "tagline": "Kết nối sinh viên và nhân lực Việt Nam với cơ hội toàn cầu.",
+          "overview": [
+            "Nền tảng kết nối sinh viên và nhân lực Việt Nam với cơ hội ở nước ngoài. Hệ thống gom lại một sàn việc làm toàn cầu, một sàn freelance tuyển dụng theo dự án, và một module đăng ký khóa học cho các trường đại học Hàn Quốc — ba cách để người dùng tìm việc hoặc du học, trong cùng một nơi.",
+            "Các tính năng thời gian thực — nhắn tin và cập nhật trực tiếp — chạy qua WebSocket với Firebase, trên giao diện React / Redux và backend Node.js + MongoDB. Thực hiện với vai trò Tech Leader, phụ trách kiến trúc cho cả ba sản phẩm."
+          ],
+          "highlights": [
+            "Nền tảng kết nối việc làm toàn cầu, liên kết nhân lực Việt Nam với cơ hội nước ngoài",
+            "Sàn freelance tuyển dụng theo dự án",
+            "Module đăng ký khóa học cho các trường đại học Hàn Quốc",
+            "Nhắn tin và cập nhật trực tiếp qua WebSocket + Firebase",
+            "Giao diện React / Redux, backend Node.js + MongoDB"
+          ]
+        }
       },
       {
         "id": "lynx",
         "title": "Data Extraction Tool - LYNX",
-        "description": "Công cụ trích xuất và giám sát dữ liệu desktop cho thiết bị Android. Cho phép truy cập và điều khiển từ xa, trích xuất real-time camera, microphone, files, contacts và messages.",
+        "description": "Console desktop quản trị một đội thiết bị Android đã đăng ký — danh sách thiết bị, trạng thái và quản trị từ xa trên một dashboard.",
         "technologies": [
           "NodeJS",
           "HTML",
           "Electron",
           "Java"
-        ]
+        ],
+        "detail": {
+          "context": "AIPTGROUP VIETNAM · 2025",
+          "role": "Full-stack Developer",
+          "tagline": "Console desktop quản lý một đội thiết bị Android đã đăng ký từ một nơi.",
+          "overview": [
+            "LYNX là console desktop quản trị một đội thiết bị Android đã đăng ký từ một nơi. Hệ thống cho người vận hành một dashboard duy nhất bao quát mọi thiết bị — danh sách thiết bị, trạng thái trực tiếp và quản trị từ xa cho đội thiết bị được cấp phép — thay vì phải quản lý từng máy một.",
+            "Trên mỗi thiết bị, một agent Java báo cáo về server Node.js trung tâm, và người vận hành làm việc qua client desktop Electron. Hệ thống được xây dựng để triển khai trong lĩnh vực an ninh - quốc phòng."
+          ],
+          "highlights": [
+            "Console duy nhất cho đội thiết bị Android đã đăng ký",
+            "Danh sách thiết bị, trạng thái trực tiếp và quản trị từ xa",
+            "Mỗi thiết bị có agent Java báo cáo về server Node.js trung tâm",
+            "Client desktop Electron cho người vận hành",
+            "Xây dựng cho lĩnh vực an ninh - quốc phòng"
+          ]
+        }
       }
     ],
     "eyebrow": "Dự án tiêu biểu",
     "subtitle": "Các sản phẩm chuyên biệt và nền tảng nội bộ tôi xây dựng hoặc dẫn dắt — computer vision, AI ứng dụng và công cụ vận hành, chủ yếu cho lĩnh vực an ninh - quốc phòng.",
     "ctaNote": "Phần lớn công việc nằm trong repository nội bộ của công ty và không thể chia sẻ công khai.",
-    "ctaButton": "Xem thêm trên GitHub"
+    "ctaButton": "Xem thêm trên GitHub",
+    "viewDetails": "Xem chi tiết"
   },
   "contact": {
     "title": "Liên hệ",
@@ -280,5 +425,18 @@
     "closeMenu": "Đóng menu",
     "changeLanguage": "Đổi ngôn ngữ",
     "portraitAlt": "Ảnh chân dung Trần Quang Đạo"
+  },
+  "projectDetail": {
+    "back": "Tất cả dự án",
+    "overview": "Tổng quan",
+    "highlights": "Điểm nổi bật",
+    "role": "Vai trò",
+    "context": "Bối cảnh",
+    "stack": "Công nghệ",
+    "next": "Dự án tiếp theo",
+    "prev": "Dự án trước",
+    "notFoundTitle": "Không tìm thấy dự án",
+    "notFoundBody": "Dự án này không tồn tại. Có thể đã được đổi tên hoặc gỡ bỏ.",
+    "privateNote": "Dự án nằm trong repository nội bộ của công ty và không thể chia sẻ công khai."
   }
 }

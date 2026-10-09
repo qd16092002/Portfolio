@@ -1,31 +1,32 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './App.css';
 import { LanguageProvider, useLanguage } from './context/LanguageContext';
+import { useHashRoute } from './hooks/useHashRoute';
 import Header from './components/Layout/Header';
 import Footer from './components/Layout/Footer';
-import Hero from './components/Sections/Hero';
-import About from './components/Sections/About';
-import Skills from './components/Sections/Skills';
-import Experience from './components/Sections/Experience';
-import Projects from './components/Sections/Projects';
-import Contact from './components/Sections/Contact';
+import Home from './components/Home';
+import ProjectDetail from './components/Sections/ProjectDetail';
 
 const Portfolio = () => {
   const { t } = useLanguage();
+  const route = useHashRoute();
+  const isProject = route.name === 'project';
+
+  /* A detail page always starts at the top. Home sections are handled inside
+     Home (on mount) so the browser's native smooth-scroll still drives
+     same-page nav clicks. */
+  useEffect(() => {
+    if (isProject) window.scrollTo({ top: 0, behavior: 'instant' });
+  }, [route, isProject]);
 
   return (
     <div className="app">
       <a className="skip-link" href="#main">
         {t('a11y.skipToContent')}
       </a>
-      <Header />
+      <Header showSectionNav={!isProject} />
       <main id="main">
-        <Hero />
-        <About />
-        <Skills />
-        <Experience />
-        <Projects />
-        <Contact />
+        {isProject ? <ProjectDetail id={route.id} /> : <Home />}
       </main>
       <Footer />
     </div>

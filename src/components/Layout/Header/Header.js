@@ -7,13 +7,13 @@ import './Header.css';
 const NAV_ITEMS = ['about', 'skills', 'experience', 'projects', 'contact'];
 const SPY_IDS = ['hero', ...NAV_ITEMS];
 
-const Header = () => {
+const Header = ({ showSectionNav = true }) => {
   const { language, setLanguage, t } = useLanguage();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isLangOpen, setIsLangOpen] = useState(false);
   const langRef = useRef(null);
-  const activeId = useScrollSpy(SPY_IDS);
+  const activeId = useScrollSpy(showSectionNav ? SPY_IDS : []);
 
   useEffect(() => {
     const onScroll = () => setIsScrolled(window.scrollY > 8);
